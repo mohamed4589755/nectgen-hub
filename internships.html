@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Opportunities - NextGen Hub</title>
+    <meta name="description" content="Explore current internship opportunities in AI, Machine Learning, and Data Analytics at NextGen Hub. Gain real-world project experience.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" id="logoLink">
+                <span class="logo-icon">⚡</span>NextGen<span class="gradient-text">Hub</span><span class="logo-dot">.</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Navigation" id="navToggleBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link" id="navIndex">Home</a></li>
+                <li><a href="internships.html" class="nav-link active" id="navInternships">Internships</a></li>
+                <li><a href="bootcamps.html" class="nav-link" id="navBootcamps">Bootcamps</a></li>
+                <li><a href="about.html" class="nav-link" id="navAbout">About Us</a></li>
+                <li><a href="contact.html" class="nav-link" id="navContact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Subpage Hero Banner -->
+    <section class="section-padding" style="padding-top: 150px; background: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%); border-bottom: 1px solid var(--glass-border);">
+        <div class="container text-center">
+            <span class="section-tag">Career Acceleration</span>
+            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 16px;">Internship <span class="gradient-text">Opportunities</span></h1>
+            <p class="section-subtitle">Real tasks, real systems, and actual mentorship. Gain production-level experience that makes you stand out to global recruiters.</p>
+        </div>
+    </section>
+
+    <!-- Internships Listings -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <h2 class="section-title">Open Roles</h2>
+                <p class="section-subtitle">Select a track matching your career aspirations. We accept candidates for our Summer and Autumn cohorts.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Role 1 -->
+                <div class="card glass-panel" id="roleCard1">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-tags">
+                        <span class="tag tag-highlight">AI Research</span>
+                        <span class="tag">Remote</span>
+                        <span class="tag">Paid</span>
+                    </div>
+                    <h3 class="card-title">AI Research Intern (NLP & LLMs)</h3>
+                    <p class="card-desc">
+                        Work alongside our senior researchers to evaluate, fine-tune, and deploy transformer-based models. You will assist in customizing RAG systems for enterprise document retrieval workflows.
+                    </p>
+                    <div class="card-footer">
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Duration: <b>3 Months</b></span>
+                        <a href="contact.html?role=AI_Research" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole1">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="card glass-panel" id="roleCard2">
+                    <div class="card-icon">📈</div>
+                    <div class="card-tags">
+                        <span class="tag tag-highlight">Data Analytics</span>
+                        <span class="tag">Hybrid</span>
+                        <span class="tag">Paid</span>
+                    </div>
+                    <h3 class="card-title">Data Analytics Intern</h3>
+                    <p class="card-desc">
+                        Help translate multi-channel operational and marketing metrics into executive dashboards. You will write efficient SQL queries, design beautiful dashboards, and run exploratory data analyses (EDA).
+                    </p>
+                    <div class="card-footer">
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Duration: <b>3 Months</b></span>
+                        <a href="contact.html?role=Data_Analytics" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole2">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="card glass-panel" id="roleCard3">
+                    <div class="card-icon">⚙️</div>
+                    <div class="card-tags">
+                        <span class="tag tag-highlight">Machine Learning</span>
+                        <span class="tag">On-site</span>
+                        <span class="tag">Paid</span>
+                    </div>
+                    <h3 class="card-title">Machine Learning Engineer Intern</h3>
+                    <p class="card-desc">
+                        Support the deployment and containerization of deep learning models in production environments. You will optimize inference latency using tools like ONNX, Docker, and Kubernetes.
+                    </p>
+                    <div class="card-footer">
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Duration: <b>6 Months</b></span>
+                        <a href="contact.html?role=ML_Engineer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Highlights / Benefits -->
+    <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-tag">Benefits</span>
+                <h2 class="section-title">What We Offer</h2>
+                <p class="section-subtitle">Our program is designed to launch your professional career with solid foundational support.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card glass-panel" style="padding: 30px; border-color: transparent;" id="benefit1">
+                    <h3 class="card-title" style="color: var(--accent-cyan);">👥 Direct Mentorship</h3>
+                    <p class="card-desc" style="font-size: 0.9rem;">You will be paired with an industry mentor who holds regular 1-on-1 feedback sessions to map out your career growth.</p>
+                </div>
+                <div class="card glass-panel" style="padding: 30px; border-color: transparent;" id="benefit2">
+                    <h3 class="card-title" style="color: var(--accent-violet);">💻 Real Production Code</h3>
+                    <p class="card-desc" style="font-size: 0.9rem;">No coffee runs or meaningless tasks. You contribute directly to products, client assets, and open-source packages.</p>
+                </div>
+                <div class="card glass-panel" style="padding: 30px; border-color: transparent;" id="benefit3">
+                    <h3 class="card-title" style="color: var(--accent-indigo);">💼 Interview Prep & Referral</h3>
+                    <p class="card-desc" style="font-size: 0.9rem;">Graduating interns receive referral recommendations and mock technical interview training with our leadership team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                    <span class="logo-icon">⚡</span>NextGen<span class="gradient-text">Hub</span>
+                </a>
+                <p>Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.</p>
+            </div>
+            <div class="footer-nav">
+                <h4 class="footer-nav-title">Quick Links</h4>
+                <a href="index.html" id="footerNavHome">Home</a>
+                <a href="internships.html" id="footerNavInternships">Internship Listings</a>
+                <a href="bootcamps.html" id="footerNavBootcamps">Summer Bootcamps</a>
+            </div>
+            <div class="footer-nav">
+                <h4 class="footer-nav-title">Connect</h4>
+                <a href="about.html" id="footerNavAbout">About Us</a>
+                <a href="contact.html" id="footerNavContact">Contact Support</a>
+                <div class="social-links" style="margin-top: 16px;">
+                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-icon" aria-label="GitHub">git</a>
+                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 NextGen Hub. All rights reserved.</p>
+            <p>Designed for professional excellence in AI & Analytics.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Pre-fill subject based on selected query parameters
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const role = urlParams.get('role');
+            if (role) {
+                // If they apply, pass this value to contact form redirect
+            }
+        });
+    </script>
+</body>
+</html>

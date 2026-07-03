@@ -1,0 +1,53 @@
+============================================================
+           DNS RECORDS FOR NEXTGENHUB.DEV (GITHUB PAGES)
+============================================================
+
+Below are the exact values to copy and paste into your domain's DNS manager.
+You can easily open this file using Notepad, double-click to select any text, and copy it.
+
+------------------------------------------------------------
+RECORD 1: (A Record)
+------------------------------------------------------------
+Type of record : A
+Host           : @
+Response/Value : 185.199.108.153
+
+------------------------------------------------------------
+RECORD 2: (A Record)
+------------------------------------------------------------
+Type of record : A
+Host           : @
+Response/Value : 185.199.109.153
+
+------------------------------------------------------------
+RECORD 3: (A Record)
+------------------------------------------------------------
+Type of record : A
+Host           : @
+Response/Value : 185.199.110.153
+
+------------------------------------------------------------
+RECORD 4: (A Record)
+------------------------------------------------------------
+Type of record : A
+Host           : @
+Response/Value : 185.199.111.153
+
+------------------------------------------------------------
+RECORD 5: (CNAME Record)
+------------------------------------------------------------
+Type of record : CNAME
+Host           : www
+Response/Value : mohamed4589755.github.io
+
+------------------------------------------------------------
+RECORD 6: (TXT Record - FOR GITHUB VERIFICATION)
+------------------------------------------------------------
+Type of record : TXT
+Host           : _github-pages-challenge-mohamed4589755
+Response/Value : 1c88fd857748b22bba11b973cec9fd
+
+============================================================
+After adding Record 6 (TXT Record) in your domain manager, 
+go back to GitHub and click the green "Verify" button.
+============================================================
