@@ -21,12 +21,12 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active" id="navIndex">Home</a></li>
-                <li><a href="internships.html" class="nav-link " id="navInternships">Internships</a></li>
-                <li><a href="bootcamps.html" class="nav-link " id="navBootcamps">Bootcamps</a></li>
-                <li><a href="diplomas.html" class="nav-link" id="navDiplomas">Diplomas</a></li>
-                <li><a href="about.html" class="nav-link " id="navAbout">About Us</a></li>
-                <li><a href="contact.html" class="nav-link " id="navContact">Contact</a></li>
+                <li><a href="index.html" class="nav-link active" id="navIndex" data-i18n="nav_home">Home</a></li>
+                <li><a href="internships.html" class="nav-link" id="navInternships" data-i18n="nav_internships">Internships</a></li>
+                <li><a href="bootcamps.html" class="nav-link" id="navBootcamps" data-i18n="nav_bootcamps">Bootcamps</a></li>
+                <li><a href="diplomas.html" class="nav-link" id="navDiplomas" data-i18n="nav_diplomas">Diplomas</a></li>
+                <li><a href="about.html" class="nav-link" id="navAbout" data-i18n="nav_about">About Us</a></li>
+                <li><a href="contact.html" class="nav-link" id="navContact" data-i18n="nav_contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -36,14 +36,14 @@
         <div class="hero-glow"></div>
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="section-tag">Empower the Future</span>
-                <h1 class="hero-title">Empowering the Next Generation of <span class="gradient-text">Tech Creators</span></h1>
-                <p class="hero-subtitle">
+                <span class="section-tag" data-i18n="index_hero_tag">Empower the Future</span>
+                <h1 class="hero-title" data-i18n="index_hero_title">Empowering the Next Generation of <span class="gradient-text">Tech Creators</span></h1>
+                <p class="hero-subtitle" data-i18n="index_hero_sub">
                     At NextGen Hub, we bridge the gap between academic theory and practical innovation. Join our immersive programs in AI, Machine Learning, and Data Analytics to shape the future of technology.
                 </p>
                 <div class="hero-actions">
-                    <a href="bootcamps.html" class="btn btn-primary" id="heroCtaPrimary">Explore Bootcamps</a>
-                    <a href="internships.html" class="btn btn-secondary" id="heroCtaSecondary">View Internships</a>
+                    <a href="bootcamps.html" class="btn btn-primary" id="heroCtaPrimary" data-i18n="index_hero_cta_primary">Explore Bootcamps</a>
+                    <a href="internships.html" class="btn btn-secondary" id="heroCtaSecondary" data-i18n="index_hero_cta_secondary">View Internships</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -51,8 +51,8 @@
                 <div class="floating-badge badge-1 glass-panel">
                     <div class="badge-icon">AI</div>
                     <div>
-                        <h4 style="font-size: 0.9rem;">Machine Learning</h4>
-                        <span style="font-size: 0.75rem; color: var(--text-muted);">Neural Networks</span>
+                        <h4 style="font-size: 0.9rem;" data-i18n="index_badge_ml">Machine Learning</h4>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="index_badge_nn">Neural Networks</span>
                     </div>
                 </div>
                 <!-- Main hero image -->
@@ -61,10 +61,10 @@
                 </div>
                 <!-- Floating badge 2 -->
                 <div class="floating-badge badge-2 glass-panel">
-                    <div class="badge-icon" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));">📊</div>
+                    <div class="badge-icon" style="background: var(--accent-blue);">📊</div>
                     <div>
-                        <h4 style="font-size: 0.9rem;">Analytics</h4>
-                        <span style="font-size: 0.75rem; color: var(--text-muted);">Predictive Models</span>
+                        <h4 style="font-size: 0.9rem;" data-i18n="index_badge_da">Analytics</h4>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="index_badge_pm">Predictive Models</span>
                     </div>
                 </div>
             </div>
@@ -75,16 +75,16 @@
     <section class="container" style="margin-top: -60px; position: relative; z-index: 5;">
         <div class="stats-grid glass-panel">
             <div class="stat-card">
-                <div class="stat-number gradient-text" id="statGrads">500+</div>
-                <div class="stat-label">Graduates</div>
-            </div>
-            <div class="stat-card" style="border-left: 1px solid var(--glass-border); border-right: 1px solid var(--glass-border);">
-                <div class="stat-number gradient-text" id="statPartners">15+</div>
-                <div class="stat-label">Industry Partners</div>
+                <div class="stat-number gradient-text" id="statGrads" data-i18n="index_stat_grads">500+</div>
+                <div class="stat-label" data-i18n="index_stat_grads_label">Graduates</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number gradient-text" id="statRate">94%</div>
-                <div class="stat-label">Employment Rate</div>
+                <div class="stat-number gradient-text" id="statPartners" data-i18n="index_stat_partners">15+</div>
+                <div class="stat-label" data-i18n="index_stat_partners_label">Industry Partners</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number gradient-text" id="statRate" data-i18n="index_stat_rate">94%</div>
+                <div class="stat-label" data-i18n="index_stat_rate_label">Employment Rate</div>
             </div>
         </div>
     </section>
@@ -92,30 +92,30 @@
     <!-- Core Values Section -->
     <section class="section-padding">
         <div class="container">
-            <div class="section-title-wrap text-center">
-                <span class="section-tag">Why Choose Us</span>
-                <h2 class="section-title">Designed for Fast-Paced Tech Careers</h2>
-                <p class="section-subtitle">We design our curriculum around modern industry workflows, ensuring you develop skills that are in high demand.</p>
+            <div class="section-title-wrap">
+                <span class="section-tag" data-i18n="index_values_tag">Why Choose Us</span>
+                <h2 class="section-title" data-i18n="index_values_title">Designed for Fast-Paced Tech Careers</h2>
+                <p class="section-subtitle" data-i18n="index_values_sub">We design our curriculum around modern industry workflows, ensuring you develop skills that are in high demand.</p>
             </div>
             
             <div class="cards-grid">
                 <!-- Value Card 1 -->
                 <div class="card glass-panel" id="valueCard1">
                     <div class="card-icon">🧠</div>
-                    <h3 class="card-title">Cutting-Edge AI Curriculums</h3>
-                    <p class="card-desc">Master neural networks, large language models, and computer vision with tools used by world-class tech firms.</p>
+                    <h3 class="card-title" data-i18n="index_val1_title">Cutting-Edge AI Curriculums</h3>
+                    <p class="card-desc" data-i18n="index_val1_desc">Master neural networks, large language models, and computer vision with tools used by world-class tech firms.</p>
                 </div>
                 <!-- Value Card 2 -->
                 <div class="card glass-panel" id="valueCard2">
                     <div class="card-icon">📈</div>
-                    <h3 class="card-title">Real-world Data Analytics</h3>
-                    <p class="card-desc">Translate complex unstructured datasets into actionable business intelligence using Python, SQL, and PowerBI.</p>
+                    <h3 class="card-title" data-i18n="index_val2_title">Real-world Data Analytics</h3>
+                    <p class="card-desc" data-i18n="index_val2_desc">Translate complex unstructured datasets into actionable business intelligence using Python, SQL, and PowerBI.</p>
                 </div>
                 <!-- Value Card 3 -->
                 <div class="card glass-panel" id="valueCard3">
                     <div class="card-icon">🚀</div>
-                    <h3 class="card-title">Mentorship & Internships</h3>
-                    <p class="card-desc">Work directly under senior engineers and analysts during our seasonal industry-partnered internships.</p>
+                    <h3 class="card-title" data-i18n="index_val3_title">Mentorship & Internships</h3>
+                    <p class="card-desc" data-i18n="index_val3_desc">Work directly under senior engineers and analysts during our seasonal industry-partnered internships.</p>
                 </div>
             </div>
         </div>
@@ -125,9 +125,9 @@
     <section class="section-padding" style="background: var(--bg-tertiary); border-top: 1px solid rgba(15, 23, 42, 0.05); border-bottom: 1px solid rgba(15, 23, 42, 0.05);">
         <div class="container">
             <div class="section-title-wrap">
-                <span class="section-tag">Success Stories</span>
-                <h2 class="section-title">What Our Alumni Say</h2>
-                <p class="section-subtitle">Real feedback from graduates who transitioned into tech careers through NextGen Hub.</p>
+                <span class="section-tag" data-i18n="slide_tag">Success Stories</span>
+                <h2 class="section-title" data-i18n="slide_title">What Our Alumni Say</h2>
+                <p class="section-subtitle" data-i18n="slide_sub">Real feedback from graduates who transitioned into tech careers through NextGen Hub.</p>
             </div>
             
             <div class="slideshow-container glass-panel" style="background: var(--bg-secondary);">
@@ -136,27 +136,27 @@
                     <div class="slide">
                         <div class="slide-content">
                             <div class="quote-icon">“</div>
-                            <p class="slide-quote">NextGen Hub completely changed my career path. The Advanced AI Diploma gave me the exact hands-on experience and production-ready portfolio to land a job as a Machine Learning Engineer. The 1-on-1 mentorship is outstanding!</p>
-                            <h4 class="slide-author">Sarah K.</h4>
-                            <span class="slide-role">ML Engineer at TechCorp</span>
+                            <p class="slide-quote" data-i18n="slide1_quote">NextGen Hub completely changed my career path. The Advanced AI Diploma gave me the exact hands-on experience and production-ready portfolio to land a job as a Machine Learning Engineer. The 1-on-1 mentorship is outstanding!</p>
+                            <h4 class="slide-author" data-i18n="slide1_author">Sarah K.</h4>
+                            <span class="slide-role" data-i18n="slide1_role">ML Engineer at TechCorp</span>
                         </div>
                     </div>
                     <!-- Slide 2 -->
                     <div class="slide">
                         <div class="slide-content">
                             <div class="quote-icon">“</div>
-                            <p class="slide-quote">The Python and PowerBI projects I built during the Data Analytics track allowed me to transition from marketing into a lead analyst role. The curriculum is highly practical and aligned with real enterprise metrics.</p>
-                            <h4 class="slide-author">David M.</h4>
-                            <span class="slide-role">Senior Data Analyst</span>
+                            <p class="slide-quote" data-i18n="slide2_quote">The Python and PowerBI projects I built during the Data Analytics track allowed me to transition from marketing into a lead analyst role. The curriculum is highly practical and aligned with real enterprise metrics.</p>
+                            <h4 class="slide-author" data-i18n="slide2_author">David M.</h4>
+                            <span class="slide-role" data-i18n="slide2_role">Senior Data Analyst</span>
                         </div>
                     </div>
                     <!-- Slide 3 -->
                     <div class="slide">
                         <div class="slide-content">
                             <div class="quote-icon">“</div>
-                            <p class="slide-quote">Working on production systems during my internship was a game-changer. I deployed containerized models using Docker and FastAPI. It gave me the confidence to apply to senior-level roles.</p>
-                            <h4 class="slide-author">Yasmine L.</h4>
-                            <span class="slide-role">AI Developer Intern</span>
+                            <p class="slide-quote" data-i18n="slide3_quote">Working on production systems during my internship was a game-changer. I deployed containerized models using Docker and FastAPI. It gave me the confidence to apply to senior-level roles.</p>
+                            <h4 class="slide-author" data-i18n="slide3_author">Yasmine L.</h4>
+                            <span class="slide-role" data-i18n="slide3_role">AI Developer Intern</span>
                         </div>
                     </div>
                 </div>
@@ -176,11 +176,11 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="section-padding" style="background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%);">
+    <section class="section-padding">
         <div class="container text-center">
-            <h2 class="section-title" style="margin-bottom: 24px;">Ready to Start Your Tech Journey?</h2>
-            <p class="section-subtitle" style="margin-bottom: 40px;">Applications for our upcoming summer cohort are now open. Spaces are limited for high-touch mentorship.</p>
-            <a href="contact.html" class="btn btn-primary" id="ctaFooter">Get in Touch</a>
+            <h2 class="section-title" style="margin-bottom: 24px;" data-i18n="index_cta_title">Ready to Start Your Tech Journey?</h2>
+            <p class="section-subtitle" style="margin-bottom: 40px;" data-i18n="index_cta_sub">Applications for our upcoming summer cohort are now open. Spaces are limited for high-touch mentorship.</p>
+            <a href="contact.html" class="btn btn-primary" id="ctaFooter" data-i18n="index_cta_btn">Get in Touch</a>
         </div>
     </section>
 
@@ -191,19 +191,19 @@
                 <a href="index.html" class="logo" style="margin-bottom: 16px;">
                     <span class="logo-icon">⚡</span>NextGen<span class="gradient-text">Hub</span>
                 </a>
-                <p>Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.</p>
+                <p data-i18n="footer_desc">Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.</p>
             </div>
             <div class="footer-nav">
-                <h4 class="footer-nav-title">Quick Links</h4>
-                <a href="index.html" id="footerNavHome">Home</a>
-                <a href="internships.html" id="footerNavInternships">Internship Listings</a>
-                <a href="bootcamps.html" id="footerNavBootcamps">Summer Bootcamps</a>
-                <a href="diplomas.html" id="footerNavDiplomas">Professional Diplomas</a>
+                <h4 class="footer-nav-title" data-i18n="footer_links_title">Quick Links</h4>
+                <a href="index.html" id="footerNavHome" data-i18n="nav_home">Home</a>
+                <a href="internships.html" id="footerNavInternships" data-i18n="nav_internships">Internship Listings</a>
+                <a href="bootcamps.html" id="footerNavBootcamps" data-i18n="nav_bootcamps">Summer Bootcamps</a>
+                <a href="diplomas.html" id="footerNavDiplomas" data-i18n="nav_diplomas">Professional Diplomas</a>
             </div>
             <div class="footer-nav">
-                <h4 class="footer-nav-title">Connect</h4>
-                <a href="about.html" id="footerNavAbout">About Us</a>
-                <a href="contact.html" id="footerNavContact">Contact Support</a>
+                <h4 class="footer-nav-title" data-i18n="footer_connect_title">Connect</h4>
+                <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
+                <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
                     <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
@@ -212,11 +212,12 @@
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2026 NextGen Hub. All rights reserved.</p>
-            <p>Designed for professional excellence in AI & Analytics.</p>
+            <p data-i18n="footer_copyright">&copy; 2026 NextGen Hub. All rights reserved.</p>
+            <p data-i18n="footer_design">Designed for professional excellence in AI & Analytics.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
+    <script src="lang.js"></script>
 </body>
 </html>

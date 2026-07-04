@@ -21,12 +21,12 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link " id="navIndex">Home</a></li>
-                <li><a href="internships.html" class="nav-link " id="navInternships">Internships</a></li>
-                <li><a href="bootcamps.html" class="nav-link " id="navBootcamps">Bootcamps</a></li>
-                <li><a href="diplomas.html" class="nav-link" id="navDiplomas">Diplomas</a></li>
-                <li><a href="about.html" class="nav-link " id="navAbout">About Us</a></li>
-                <li><a href="contact.html" class="nav-link active" id="navContact">Contact</a></li>
+                <li><a href="index.html" class="nav-link" id="navIndex" data-i18n="nav_home">Home</a></li>
+                <li><a href="internships.html" class="nav-link" id="navInternships" data-i18n="nav_internships">Internships</a></li>
+                <li><a href="bootcamps.html" class="nav-link" id="navBootcamps" data-i18n="nav_bootcamps">Bootcamps</a></li>
+                <li><a href="diplomas.html" class="nav-link" id="navDiplomas" data-i18n="nav_diplomas">Diplomas</a></li>
+                <li><a href="about.html" class="nav-link" id="navAbout" data-i18n="nav_about">About Us</a></li>
+                <li><a href="contact.html" class="nav-link active" id="navContact" data-i18n="nav_contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -34,9 +34,9 @@
     <!-- Subpage Hero Banner -->
     <section class="section-padding" style="padding-top: 150px; background: radial-gradient(circle at 10% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 60%); border-bottom: 1px solid var(--glass-border);">
         <div class="container text-center">
-            <span class="section-tag">Get in Touch</span>
-            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 16px;">Contact <span class="gradient-text">Our Team</span></h1>
-            <p class="section-subtitle">Have questions about applications, bootcamps, or enterprise hiring programs? Let's start a conversation.</p>
+            <span class="section-tag" data-i18n="contact_banner_tag">Get in Touch</span>
+            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 16px;" data-i18n="contact_banner_title">Contact <span class="gradient-text">Our Team</span></h1>
+            <p class="section-subtitle" data-i18n="contact_banner_sub">Have questions about applications, bootcamps, or enterprise hiring programs? Let's start a conversation.</p>
         </div>
     </section>
 
@@ -47,29 +47,29 @@
             <!-- Contact Info -->
             <div class="contact-info">
                 <div>
-                    <span class="section-tag" style="text-align: left;">Details</span>
-                    <h2 class="section-title" style="font-size: 2.2rem; text-align: left; margin-bottom: 12px;">Contact Information</h2>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">You can contact us via email or social media. We typically reply within 1 business day.</p>
+                    <span class="section-tag" style="text-align: left;" data-i18n="contact_info_tag">Details</span>
+                    <h2 class="section-title" style="font-size: 2.2rem; text-align: left; margin-bottom: 12px;" data-i18n="contact_info_title">Contact Information</h2>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;" data-i18n="contact_info_sub">You can contact us via email or social media. We typically reply within 1 business day.</p>
                 </div>
 
                 <div class="contact-info-item">
                     <div class="contact-info-icon">✉</div>
                     <div class="contact-info-text">
-                        <h4>General Inquiry</h4>
-                        <p>info@nextgenhub.placeholder</p>
+                        <h4 data-i18n="contact_inquiry_title">General Inquiry</h4>
+                        <p data-i18n="contact_inquiry_val">info@nextgenhub.placeholder</p>
                     </div>
                 </div>
 
                 <div class="contact-info-item">
                     <div class="contact-info-icon">🏛</div>
                     <div class="contact-info-text">
-                        <h4>Headquarters</h4>
-                        <p>Remote / Digital Operations</p>
+                        <h4 data-i18n="contact_hq_title">Headquarters</h4>
+                        <p data-i18n="contact_hq_val">Remote / Digital Operations</p>
                     </div>
                 </div>
 
                 <div>
-                    <h4 style="margin-bottom: 12px; font-size: 1.1rem;">Follow Us</h4>
+                    <h4 style="margin-bottom: 12px; font-size: 1.1rem;" data-i18n="contact_follow">Follow Us</h4>
                     <div class="social-links">
                         <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
                         <a href="#" class="social-icon" aria-label="GitHub">git</a>
@@ -82,26 +82,26 @@
             <div class="contact-form glass-panel">
                 <form id="contactForm">
                     <div class="form-group">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Jane Doe" required>
+                        <label for="name" class="form-label" data-i18n="contact_form_name">Full Name</label>
+                        <input type="text" id="name" class="form-control" data-i18n-placeholder="contact_form_name" placeholder="Jane Doe" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="email" class="form-control" placeholder="jane@example.com" required>
+                        <label for="email" class="form-label" data-i18n="contact_form_email">Email Address</label>
+                        <input type="email" id="email" class="form-control" data-i18n-placeholder="contact_form_email" placeholder="jane@example.com" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="subject" class="form-label">Subject / Purpose</label>
-                        <input type="text" id="subject" class="form-control" placeholder="How can we help?" required>
+                        <label for="subject" class="form-label" data-i18n="contact_form_subject">Subject / Purpose</label>
+                        <input type="text" id="subject" class="form-control" data-i18n-placeholder="contact_form_subject" placeholder="How can we help?" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-control" placeholder="Tell us about your background or inquiry details..." required></textarea>
+                        <label for="message" class="form-label" data-i18n="contact_form_message">Message</label>
+                        <textarea id="message" class="form-control" data-i18n-placeholder="contact_form_message" placeholder="Tell us about your background or inquiry details..." required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitBtn">Send Inquiry</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitBtn" data-i18n="contact_form_btn">Send Inquiry</button>
                 </form>
             </div>
 
@@ -115,19 +115,19 @@
                 <a href="index.html" class="logo" style="margin-bottom: 16px;">
                     <span class="logo-icon">⚡</span>NextGen<span class="gradient-text">Hub</span>
                 </a>
-                <p>Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.</p>
+                <p data-i18n="footer_desc">Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.</p>
             </div>
             <div class="footer-nav">
-                <h4 class="footer-nav-title">Quick Links</h4>
-                <a href="index.html" id="footerNavHome">Home</a>
-                <a href="internships.html" id="footerNavInternships">Internship Listings</a>
-                <a href="bootcamps.html" id="footerNavBootcamps">Summer Bootcamps</a>
-                <a href="diplomas.html" id="footerNavDiplomas">Professional Diplomas</a>
+                <h4 class="footer-nav-title" data-i18n="footer_links_title">Quick Links</h4>
+                <a href="index.html" id="footerNavHome" data-i18n="nav_home">Home</a>
+                <a href="internships.html" id="footerNavInternships" data-i18n="nav_internships">Internship Listings</a>
+                <a href="bootcamps.html" id="footerNavBootcamps" data-i18n="nav_bootcamps">Summer Bootcamps</a>
+                <a href="diplomas.html" id="footerNavDiplomas" data-i18n="nav_diplomas">Professional Diplomas</a>
             </div>
             <div class="footer-nav">
-                <h4 class="footer-nav-title">Connect</h4>
-                <a href="about.html" id="footerNavAbout">About Us</a>
-                <a href="contact.html" id="footerNavContact">Contact Support</a>
+                <h4 class="footer-nav-title" data-i18n="footer_connect_title">Connect</h4>
+                <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
+                <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
                     <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
@@ -136,12 +136,13 @@
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2026 NextGen Hub. All rights reserved.</p>
-            <p>Designed for professional excellence in AI & Analytics.</p>
+            <p data-i18n="footer_copyright">&copy; 2026 NextGen Hub. All rights reserved.</p>
+            <p data-i18n="footer_design">Designed for professional excellence in AI & Analytics.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
+    <script src="lang.js"></script>
     <script>
         // Check URL parameters on load to auto-fill forms
         document.addEventListener('DOMContentLoaded', () => {

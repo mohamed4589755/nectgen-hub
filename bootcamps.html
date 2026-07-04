@@ -21,22 +21,22 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link " id="navIndex">Home</a></li>
-                <li><a href="internships.html" class="nav-link " id="navInternships">Internships</a></li>
-                <li><a href="bootcamps.html" class="nav-link active" id="navBootcamps">Bootcamps</a></li>
-                <li><a href="diplomas.html" class="nav-link" id="navDiplomas">Diplomas</a></li>
-                <li><a href="about.html" class="nav-link " id="navAbout">About Us</a></li>
-                <li><a href="contact.html" class="nav-link " id="navContact">Contact</a></li>
+                <li><a href="index.html" class="nav-link" id="navIndex" data-i18n="nav_home">Home</a></li>
+                <li><a href="internships.html" class="nav-link" id="navInternships" data-i18n="nav_internships">Internships</a></li>
+                <li><a href="bootcamps.html" class="nav-link active" id="navBootcamps" data-i18n="nav_bootcamps">Bootcamps</a></li>
+                <li><a href="diplomas.html" class="nav-link" id="navDiplomas" data-i18n="nav_diplomas">Diplomas</a></li>
+                <li><a href="about.html" class="nav-link" id="navAbout" data-i18n="nav_about">About Us</a></li>
+                <li><a href="contact.html" class="nav-link" id="navContact" data-i18n="nav_contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <!-- Subpage Hero Banner -->
-    <section class="section-padding" style="padding-top: 150px; background: radial-gradient(circle at 90% 10%, rgba(6, 182, 212, 0.08) 0%, transparent 50%); border-bottom: 1px solid var(--glass-border);">
+    <section class="section-padding" style="padding-top: 150px; background: radial-gradient(circle at 90% 10%, rgba(14, 165, 233, 0.06) 0%, transparent 50%); border-bottom: 1px solid var(--glass-border);">
         <div class="container text-center">
-            <span class="section-tag">Rigorous Training</span>
-            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 16px;">Summer <span class="gradient-text">Bootcamps 2026</span></h1>
-            <p class="section-subtitle">From foundation to production. Choose a path, roll up your sleeves, and master the technical frameworks defining our century.</p>
+            <span class="section-tag" data-i18n="boot_tag">Rigorous Training</span>
+            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 16px;" data-i18n="boot_title">Summer <span class="gradient-text">Bootcamps 2026</span></h1>
+            <p class="section-subtitle" data-i18n="boot_sub">From foundation to production. Choose a path, roll up your sleeves, and master the technical frameworks defining our century.</p>
         </div>
     </section>
 
@@ -44,8 +44,8 @@
     <section class="section-padding">
         <div class="container">
             <div class="section-title-wrap text-center">
-                <h2 class="section-title">Program Schedule & Curriculum</h2>
-                <p class="section-subtitle">Timeline: <b>July 1, 2026 to October 1, 2026</b>. Sessions are held live online with interactive laboratory hours.</p>
+                <h2 class="section-title" data-i18n="boot_schedule_title">Program Schedule & Curriculum</h2>
+                <p class="section-subtitle" data-i18n="boot_schedule_sub">Timeline: <b>July 1, 2026 to October 1, 2026</b>. Sessions are held live online with interactive laboratory hours.</p>
             </div>
 
             <!-- Schedule Table Wrapper -->
@@ -53,72 +53,72 @@
                 <table class="schedule-table" id="scheduleTable">
                     <thead>
                         <tr>
-                            <th>Phase & Date</th>
-                            <th>Data Analytics Track</th>
-                            <th>AI / Machine Learning Track</th>
-                            <th>Status</th>
+                            <th data-i18n="boot_table_th_phase">Phase & Date</th>
+                            <th data-i18n="boot_table_th_data">Data Analytics Track</th>
+                            <th data-i18n="boot_table_th_ai">AI / Machine Learning Track</th>
+                            <th data-i18n="boot_table_th_status">Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <b>Weeks 1 - 4</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">Jul 1 - Jul 28, 2026</span>
+                                <b data-i18n="boot_table_w14">Weeks 1 - 4</b><br>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_w14_date">Jul 1 - Jul 28, 2026</span>
                             </td>
                             <td>
-                                <b>Foundations of Business Data</b><br>
-                                Advanced SQL queries, schema structures, and data manipulation in PostgreSQL.
+                                <b data-i18n="boot_table_w14_data_t">Foundations of Business Data</b><br>
+                                <span data-i18n="boot_table_w14_data_d">Advanced SQL queries, schema structures, and data manipulation in PostgreSQL.</span>
                             </td>
                             <td>
-                                <b>Mathematical Foundations & PyTorch</b><br>
-                                Linear algebra, calculus, probability, and basic neural network design in PyTorch.
+                                <b data-i18n="boot_table_w14_ai_t">Mathematical Foundations & PyTorch</b><br>
+                                <span data-i18n="boot_table_w14_ai_d">Linear algebra, calculus, probability, and basic neural network design in PyTorch.</span>
                             </td>
-                            <td><span class="status-badge status-upcoming">Upcoming</span></td>
+                            <td><span class="status-badge status-upcoming" data-i18n="boot_table_status_upcoming">Upcoming</span></td>
                         </tr>
                         <tr>
                             <td>
-                                <b>Weeks 5 - 8</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">Jul 29 - Aug 25, 2026</span>
+                                <b data-i18n="boot_table_w58">Weeks 5 - 8</b><br>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_w58_date">Jul 29 - Aug 25, 2026</span>
                             </td>
                             <td>
-                                <b>Data Visualizations & BI</b><br>
-                                Transforming data into insights with PowerBI, Tableau, and custom Python plots (Seaborn).
+                                <b data-i18n="boot_table_w58_data_t">Data Visualizations & BI</b><br>
+                                <span data-i18n="boot_table_w58_data_d">Transforming data into insights with PowerBI, Tableau, and custom Python plots (Seaborn).</span>
                             </td>
                             <td>
-                                <b>Supervised & Unsupervised Learning</b><br>
-                                Regressions, classification models, decision trees, clustering (K-Means), and validation metrics.
+                                <b data-i18n="boot_table_w58_ai_t">Supervised & Unsupervised Learning</b><br>
+                                <span data-i18n="boot_table_w58_ai_d">Regressions, classification models, decision trees, clustering (K-Means), and validation metrics.</span>
                             </td>
-                            <td><span class="status-badge status-upcoming">Upcoming</span></td>
+                            <td><span class="status-badge status-upcoming" data-i18n="boot_table_status_upcoming">Upcoming</span></td>
                         </tr>
                         <tr>
                             <td>
-                                <b>Weeks 9 - 12</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">Aug 26 - Sep 22, 2026</span>
+                                <b data-i18n="boot_table_w912">Weeks 9 - 12</b><br>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_w912_date">Aug 26 - Sep 22, 2026</span>
                             </td>
                             <td>
-                                <b>Exploratory Analysis & Wrangling</b><br>
-                                NumPy, Pandas, missing value treatments, and advanced feature engineering methodologies.
+                                <b data-i18n="boot_table_w912_data_t">Exploratory Analysis & Wrangling</b><br>
+                                <span data-i18n="boot_table_w912_data_d">NumPy, Pandas, missing value treatments, and advanced feature engineering methodologies.</span>
                             </td>
                             <td>
-                                <b>Deep Learning & Large Models</b><br>
-                                CNNs for Computer Vision, Transformers for NLP, and fine-tuning Open-Source LLMs.
+                                <b data-i18n="boot_table_w912_ai_t">Deep Learning & Large Models</b><br>
+                                <span data-i18n="boot_table_w912_ai_d">CNNs for Computer Vision, Transformers for NLP, and fine-tuning Open-Source LLMs.</span>
                             </td>
-                            <td><span class="status-badge status-open">Open for Reg</span></td>
+                            <td><span class="status-badge status-open" data-i18n="boot_table_status_open">Open for Reg</span></td>
                         </tr>
                         <tr>
                             <td>
-                                <b>Final Cohort Week</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">Sep 23 - Oct 1, 2026</span>
+                                <b data-i18n="boot_table_wfinal">Final Cohort Week</b><br>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_wfinal_date">Sep 23 - Oct 1, 2026</span>
                             </td>
                             <td>
-                                <b>Capstone Business Analytics Project</b><br>
-                                Interactive reporting dashboard deployed on cloud to solve a logistics optimization case study.
+                                <b data-i18n="boot_table_wfinal_data_t">Capstone Business Analytics Project</b><br>
+                                <span data-i18n="boot_table_wfinal_data_d">Interactive reporting dashboard deployed on cloud to solve a logistics optimization case study.</span>
                             </td>
                             <td>
-                                <b>MLOps & Model Deployment</b><br>
-                                Wrapping algorithms inside FastAPI, containerizing with Docker, and cloud orchestration.
+                                <b data-i18n="boot_table_wfinal_ai_t">MLOps & Model Deployment</b><br>
+                                <span data-i18n="boot_table_wfinal_ai_d">Wrapping algorithms inside FastAPI, containerizing with Docker, and cloud orchestration.</span>
                             </td>
-                            <td><span class="status-badge status-open">Open for Reg</span></td>
+                            <td><span class="status-badge status-open" data-i18n="boot_table_status_open">Open for Reg</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -126,7 +126,7 @@
 
             <!-- Enrollment CTA -->
             <div style="margin-top: 48px;" class="text-center">
-                <a href="contact.html?inquiry=Bootcamp_Registration" class="btn btn-primary" id="registerCta">Reserve My Spot</a>
+                <a href="contact.html?inquiry=Bootcamp_Registration" class="btn btn-primary" id="registerCta" data-i18n="boot_register_cta">Reserve My Spot</a>
             </div>
         </div>
     </section>
@@ -135,21 +135,21 @@
     <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <div class="section-title-wrap text-center">
-                <span class="section-tag">Common Queries</span>
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Need more details? Here are answers to common questions about our bootcamps.</p>
+                <span class="section-tag" data-i18n="boot_faq_tag">Common Queries</span>
+                <h2 class="section-title" data-i18n="boot_faq_title">Frequently Asked Questions</h2>
+                <p class="section-subtitle" data-i18n="boot_faq_sub">Need more details? Here are answers to common questions about our bootcamps.</p>
             </div>
 
             <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));">
                 <!-- FAQ 1 -->
                 <div class="card glass-panel" style="padding: 30px;" id="faqCard1">
-                    <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-cyan);">What are the prerequisites for the AI/ML track?</h3>
-                    <p class="card-desc" style="font-size: 0.9rem;">Basic Python familiarity and high-school-level math are recommended. We provide pre-course self-study materials two weeks before July 1st to bring you up to speed.</p>
+                    <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-cyan);" data-i18n="boot_faq1_q">What are the prerequisites for the AI/ML track?</h3>
+                    <p class="card-desc" style="font-size: 0.9rem;" data-i18n="boot_faq1_a">Basic Python familiarity and high-school-level math are recommended. We provide pre-course self-study materials two weeks before July 1st to bring you up to speed.</p>
                 </div>
                 <!-- FAQ 2 -->
                 <div class="card glass-panel" style="padding: 30px;" id="faqCard2">
-                    <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-violet);">Is there a certificate provided upon graduation?</h3>
-                    <p class="card-desc" style="font-size: 0.9rem;">Yes. All graduates who successfully complete their capstone project and pass the final review will receive an authenticated digital Certificate of Completion.</p>
+                    <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-violet);" data-i18n="boot_faq2_q">Is there a certificate provided upon graduation?</h3>
+                    <p class="card-desc" style="font-size: 0.9rem;" data-i18n="boot_faq2_a">Yes. All graduates who successfully complete their capstone project and pass the final review will receive an authenticated digital Certificate of Completion.</p>
                 </div>
             </div>
         </div>
@@ -162,19 +162,19 @@
                 <a href="index.html" class="logo" style="margin-bottom: 16px;">
                     <span class="logo-icon">⚡</span>NextGen<span class="gradient-text">Hub</span>
                 </a>
-                <p>Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.</p>
+                <p data-i18n="footer_desc">Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.</p>
             </div>
             <div class="footer-nav">
-                <h4 class="footer-nav-title">Quick Links</h4>
-                <a href="index.html" id="footerNavHome">Home</a>
-                <a href="internships.html" id="footerNavInternships">Internship Listings</a>
-                <a href="bootcamps.html" id="footerNavBootcamps">Summer Bootcamps</a>
-                <a href="diplomas.html" id="footerNavDiplomas">Professional Diplomas</a>
+                <h4 class="footer-nav-title" data-i18n="footer_links_title">Quick Links</h4>
+                <a href="index.html" id="footerNavHome" data-i18n="nav_home">Home</a>
+                <a href="internships.html" id="footerNavInternships" data-i18n="nav_internships">Internship Listings</a>
+                <a href="bootcamps.html" id="footerNavBootcamps" data-i18n="nav_bootcamps">Summer Bootcamps</a>
+                <a href="diplomas.html" id="footerNavDiplomas" data-i18n="nav_diplomas">Professional Diplomas</a>
             </div>
             <div class="footer-nav">
-                <h4 class="footer-nav-title">Connect</h4>
-                <a href="about.html" id="footerNavAbout">About Us</a>
-                <a href="contact.html" id="footerNavContact">Contact Support</a>
+                <h4 class="footer-nav-title" data-i18n="footer_connect_title">Connect</h4>
+                <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
+                <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
                     <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
@@ -183,11 +183,12 @@
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2026 NextGen Hub. All rights reserved.</p>
-            <p>Designed for professional excellence in AI & Analytics.</p>
+            <p data-i18n="footer_copyright">&copy; 2026 NextGen Hub. All rights reserved.</p>
+            <p data-i18n="footer_design">Designed for professional excellence in AI & Analytics.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
+    <script src="lang.js"></script>
 </body>
 </html>
