@@ -166,6 +166,14 @@
                     subjectField.value = 'Bootcamp Registration Inquiry';
                     messageField.placeholder = 'State your preferred track (Data Analytics or AI/ML) and any questions about registration...';
                     messageField.focus();
+                } else if (inquiry === 'AI_Diploma') {
+                    subjectField.value = 'Enrollment: Advanced AI & Deep Learning Diploma';
+                    messageField.placeholder = 'Please tell us about your technical background and why you want to enroll in the AI Diploma...';
+                    messageField.focus();
+                } else if (inquiry === 'Data_Diploma') {
+                    subjectField.value = 'Enrollment: Enterprise Data Analytics & Engineering Diploma';
+                    messageField.placeholder = 'Please tell us about your analytical background and why you want to enroll in the Data Analytics Diploma...';
+                    messageField.focus();
                 }
             }
         });
