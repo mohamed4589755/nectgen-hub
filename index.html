@@ -121,6 +121,59 @@
         </div>
     </section>
 
+    <!-- Student Success Stories (Slideshow) -->
+    <section class="section-padding" style="background: var(--bg-tertiary); border-top: 1px solid rgba(15, 23, 42, 0.05); border-bottom: 1px solid rgba(15, 23, 42, 0.05);">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">What Our Alumni Say</h2>
+                <p class="section-subtitle">Real feedback from graduates who transitioned into tech careers through NextGen Hub.</p>
+            </div>
+            
+            <div class="slideshow-container glass-panel" style="background: var(--bg-secondary);">
+                <div class="slide-track" id="slideTrack">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="quote-icon">“</div>
+                            <p class="slide-quote">NextGen Hub completely changed my career path. The Advanced AI Diploma gave me the exact hands-on experience and production-ready portfolio to land a job as a Machine Learning Engineer. The 1-on-1 mentorship is outstanding!</p>
+                            <h4 class="slide-author">Sarah K.</h4>
+                            <span class="slide-role">ML Engineer at TechCorp</span>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="quote-icon">“</div>
+                            <p class="slide-quote">The Python and PowerBI projects I built during the Data Analytics track allowed me to transition from marketing into a lead analyst role. The curriculum is highly practical and aligned with real enterprise metrics.</p>
+                            <h4 class="slide-author">David M.</h4>
+                            <span class="slide-role">Senior Data Analyst</span>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="quote-icon">“</div>
+                            <p class="slide-quote">Working on production systems during my internship was a game-changer. I deployed containerized models using Docker and FastAPI. It gave me the confidence to apply to senior-level roles.</p>
+                            <h4 class="slide-author">Yasmine L.</h4>
+                            <span class="slide-role">AI Developer Intern</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation controls -->
+                <button class="slide-btn prev-btn" id="prevSlide" aria-label="Previous Slide">‹</button>
+                <button class="slide-btn next-btn" id="nextSlide" aria-label="Next Slide">›</button>
+                
+                <!-- Indicators -->
+                <div class="slideshow-dots" id="slideshowDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Call to Action -->
     <section class="section-padding" style="background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%);">

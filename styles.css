@@ -410,6 +410,7 @@ header.scrolled {
 /* --- SECTION GENERAL STYLE --- */
 .section-title-wrap {
     margin-bottom: 60px;
+    text-align: left !important; /* Force left alignment globally */
 }
 
 .section-tag {
@@ -430,7 +431,7 @@ header.scrolled {
 .section-subtitle {
     color: var(--text-muted);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 !important; /* Align left */
 }
 
 /* --- GRID CARDS (INTERNSHIPS / BOOTCAMPS) --- */
@@ -948,4 +949,124 @@ footer {
     .floating-badge {
         display: none; /* Hide floating badges on smaller mobile viewports to prevent layout overflow */
     }
+}
+
+/* --- SLIDESHOW / CAROUSEL --- */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto 0;
+    overflow: hidden;
+    padding: 60px 50px 40px;
+    border-radius: var(--radius-lg);
+}
+
+.slide-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content {
+    max-width: 650px;
+    text-align: left; /* Align slide text to the left! */
+    padding: 0 20px;
+}
+
+.quote-icon {
+    font-size: 4rem;
+    line-height: 1;
+    font-family: serif;
+    color: var(--accent-cyan);
+    opacity: 0.25;
+    margin-bottom: -15px;
+    margin-left: -10px;
+}
+
+.slide-quote {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-main);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.slide-author {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--accent-violet);
+    margin-bottom: 4px;
+}
+
+.slide-role {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    z-index: 10;
+    box-shadow: var(--shadow-soft);
+}
+
+.slide-btn:hover {
+    background: var(--gradient-primary);
+    color: var(--text-dark);
+    border-color: transparent;
+    box-shadow: var(--shadow-glow);
+}
+
+.prev-btn {
+    left: 12px;
+}
+
+.next-btn {
+    right: 12px;
+}
+
+.slideshow-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    opacity: 0.3;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.dot.active {
+    background: var(--accent-cyan);
+    opacity: 1;
+    width: 20px;
+    border-radius: 8px;
 }
