@@ -1101,3 +1101,33 @@ body.rtl .social-links {
 body.rtl .slide-btn {
     /* Flip buttons visually or swap positioning for better feel */
 }
+
+/* --- WHATSAPP FLOATING BUTTON --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #25D366; /* Official WhatsApp Green */
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+    z-index: 9999;
+    transition: var(--transition-smooth);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35);
+    background-color: #20BA5A;
+}
+
+/* Flip WhatsApp button position for Arabic RTL layouts */
+body.rtl .whatsapp-float {
+    right: auto !important;
+    left: 24px !important;
+}
