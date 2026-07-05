@@ -33,6 +33,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+    pointer-events: none; /* Disables browser Visual Search hover overlays (Google Lens) */
+    user-select: none;    /* Prevents selecting/highlighting images */
+    -webkit-user-drag: none; /* Prevents dragging the image */
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
