@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- WhatsApp Floating Button Injection ---
-    const whatsappNumber = "201234567890"; // Placeholder Egypt number
+    const whatsappNumber = "201206751361";
     const whatsappText = "Hello NextGen Hub, I am interested in your programs!";
     
     const waBtn = document.createElement('a');
