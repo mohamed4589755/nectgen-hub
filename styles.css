@@ -69,9 +69,16 @@ body {
 }
 
 /* --- TYPOGRAPHY --- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+h1, h2 {
+    font-weight: 800; /* Extra bold like Gilroy-Heavy/Bold on Sprints.ai */
     line-height: 1.1;
+    letter-spacing: -0.03em; /* Tight letter spacing */
+    color: var(--text-main);
+}
+
+h3, h4, h5, h6 {
+    font-weight: 700; /* Bold */
+    line-height: 1.2;
     letter-spacing: -0.025em;
     color: var(--text-main);
 }
