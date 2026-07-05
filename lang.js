@@ -13,7 +13,7 @@ const translations = {
         footer_links_title: "Quick Links",
         footer_connect_title: "Connect",
         footer_copyright: "&copy; 2026 NextGen Hub. All rights reserved.",
-        footer_design: "Designed for professional excellence in AI & Analytics.",
+        footer_design: ".Innovate. Learn. Lead",
         
         // Index Page
         index_hero_tag: "Empower the Future",
@@ -217,7 +217,7 @@ const translations = {
         footer_links_title: "روابط سريعة",
         footer_connect_title: "تواصل معنا",
         footer_copyright: "&copy; 2026 NextGen Hub. All rights reserved.",
-        footer_design: "صُمم لتحقيق التميز المهني في AI & Analytics.",
+        footer_design: ".Innovate. Learn. Lead",
         
         // Index Page
         index_hero_tag: "Empower the Future",
