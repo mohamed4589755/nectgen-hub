@@ -210,9 +210,8 @@ index_html = '''<!DOCTYPE html>
                 <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
                 <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
-                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="https://www.linkedin.com/company/nextgen-datahub/" class="social-icon" aria-label="LinkedIn" target="_blank">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
                 </div>
             </div>
         </div>
@@ -384,9 +383,8 @@ internships_html = '''<!DOCTYPE html>
                 <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
                 <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
-                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="https://www.linkedin.com/company/nextgen-datahub/" class="social-icon" aria-label="LinkedIn" target="_blank">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
                 </div>
             </div>
         </div>
@@ -581,9 +579,8 @@ bootcamps_html = '''<!DOCTYPE html>
                 <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
                 <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
-                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="https://www.linkedin.com/company/nextgen-datahub/" class="social-icon" aria-label="LinkedIn" target="_blank">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
                 </div>
             </div>
         </div>
@@ -745,9 +742,8 @@ diplomas_html = '''<!DOCTYPE html>
                 <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
                 <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
-                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="https://www.linkedin.com/company/nextgen-datahub/" class="social-icon" aria-label="LinkedIn" target="_blank">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
                 </div>
             </div>
         </div>
@@ -873,9 +869,8 @@ about_html = '''<!DOCTYPE html>
                 <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
                 <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
-                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="https://www.linkedin.com/company/nextgen-datahub/" class="social-icon" aria-label="LinkedIn" target="_blank">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
                 </div>
             </div>
         </div>
@@ -965,9 +960,8 @@ contact_html = '''<!DOCTYPE html>
                 <div>
                     <h4 style="margin-bottom: 12px; font-size: 1.1rem;" data-i18n="contact_follow">Follow Us</h4>
                     <div class="social-links">
-                        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                        <a href="https://www.linkedin.com/company/nextgen-datahub/" class="social-icon" aria-label="LinkedIn" target="_blank">in</a>
                         <a href="#" class="social-icon" aria-label="GitHub">git</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
                     </div>
                 </div>
             </div>
@@ -1023,9 +1017,8 @@ contact_html = '''<!DOCTYPE html>
                 <a href="about.html" id="footerNavAbout" data-i18n="nav_about">About Us</a>
                 <a href="contact.html" id="footerNavContact" data-i18n="nav_contact">Contact Support</a>
                 <div class="social-links" style="margin-top: 16px;">
-                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="https://www.linkedin.com/company/nextgen-datahub/" class="social-icon" aria-label="LinkedIn" target="_blank">in</a>
                     <a href="#" class="social-icon" aria-label="GitHub">git</a>
-                    <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
                 </div>
             </div>
         </div>
