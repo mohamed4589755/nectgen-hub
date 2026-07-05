@@ -108,7 +108,7 @@ a:hover {
 }
 
 .section-padding {
-    padding: 120px 0; /* Apple spacious layouts */
+    padding: 70px 0; /* Compact layouts for reduced length */
 }
 
 .text-center {
@@ -255,10 +255,10 @@ header.scrolled {
 /* --- HERO SECTION --- */
 .hero {
     position: relative;
-    min-height: 90vh;
+    min-height: 70vh; /* Reduced from 90vh to reduce length */
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding: 120px 0 60px; /* Compact padding */
     background: #FFFFFF;
 }
 
@@ -405,7 +405,7 @@ header.scrolled {
 
 /* --- SECTION GENERAL STYLE --- */
 .section-title-wrap {
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* Reduced from 50px */
     text-align: left !important; /* Apple left aligned sections */
 }
 
