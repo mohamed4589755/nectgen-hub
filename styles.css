@@ -734,7 +734,7 @@ header.scrolled {
 
 textarea.form-control {
     resize: vertical;
-    min-height: 120px;
+    min-height: 240px;
 }
 
 .contact-form button:hover {
