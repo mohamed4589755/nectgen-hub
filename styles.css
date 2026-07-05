@@ -1,13 +1,15 @@
-/* --- APPLE DESIGN SYSTEM --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+
+/* --- DESIGN SYSTEM --- */
 :root {
     --bg-primary: #FFFFFF;
-    --bg-secondary: #F5F5F7;  /* Apple signature light grey block background */
+    --bg-secondary: #F5F5F7;
     --bg-tertiary: #FAFAFA;
-    --accent-blue: #0071E3;  /* Apple link & button blue */
-    --accent-violet: #1D1D1F; /* Apple primary text color */
+    --accent-blue: #0071E3;
+    --accent-violet: #1D1D1F;
     --accent-cyan: #0071E3;
-    --text-main: #1D1D1F;     /* Apple primary text */
-    --text-muted: #86868B;    /* Apple secondary muted grey */
+    --text-main: #1D1D1F;
+    --text-muted: #86868B;
     --text-dark: #FFFFFF;
     --glass-bg: rgba(255, 255, 255, 0.8);
     --glass-border: rgba(0, 0, 0, 0.08);
@@ -15,11 +17,11 @@
     --gradient-glow: none;
     --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.04);
     --radius-sm: 8px;
-    --radius-md: 18px;        /* Apple rounded card corners */
+    --radius-md: 18px;
     --radius-lg: 24px;
-    --radius-pill: 980px;     /* Apple pill buttons */
-    --transition-smooth: all 0.35s cubic-bezier(0.25, 1, 0.5, 1); /* Apple smooth transition */
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --radius-pill: 980px;
+    --transition-smooth: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+    --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 /* --- BASE & RESET --- */
@@ -1032,7 +1034,7 @@ footer {
 
 /* --- ARABIC (RTL) STYLING OVERRIDES --- */
 body.rtl {
-    font-family: 'Cairo', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: 'Tajawal', sans-serif;
     letter-spacing: 0;
 }
 
