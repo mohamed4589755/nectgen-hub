@@ -156,6 +156,56 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoSlide();
     }
 
+    // --- Hero Image Slider ---
+    const heroSlidesWrapper = document.getElementById('heroSlidesWrapper');
+    const heroDots = document.querySelectorAll('.hero-dot');
+    if (heroSlidesWrapper && heroDots.length > 0) {
+        let currentHeroSlide = 0;
+        let heroSlideInterval;
+        
+        const updateHeroSlidePosition = () => {
+            const isRtl = document.body.classList.contains('rtl');
+            const shiftPercent = currentHeroSlide * 33.333;
+            // In LTR we translate left (negative), in RTL we translate right (positive)
+            const directionMultiplier = isRtl ? 1 : -1;
+            heroSlidesWrapper.style.transform = `translateX(${directionMultiplier * shiftPercent}%)`;
+            
+            // Update active dot indicator
+            heroDots.forEach((dot, index) => {
+                if (index === currentHeroSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        };
+        
+        const nextHeroSlide = () => {
+            currentHeroSlide = (currentHeroSlide + 1) % heroDots.length;
+            updateHeroSlidePosition();
+        };
+        
+        const startHeroAutoSlide = () => {
+            heroSlideInterval = setInterval(nextHeroSlide, 4000); // Change slide every 4 seconds
+        };
+        
+        const resetHeroAutoSlide = () => {
+            clearInterval(heroSlideInterval);
+            startHeroAutoSlide();
+        };
+        
+        heroDots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                currentHeroSlide = parseInt(e.target.getAttribute('data-slide'));
+                updateHeroSlidePosition();
+                resetHeroAutoSlide();
+            });
+        });
+        
+        startHeroAutoSlide();
+    }
+
+
     // --- WhatsApp Floating Button Injection ---
     const whatsappNumber = "201206751361";
     const whatsappText = "Hello NextGen Hub, I am interested in your programs!";

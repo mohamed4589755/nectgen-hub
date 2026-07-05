@@ -1244,3 +1244,55 @@ body.rtl .whatsapp-float {
     }
 }
 
+/* --- HERO IMAGE SLIDER --- */
+.hero-slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.hero-slides-wrapper {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    width: 300%; /* 3 slides */
+}
+
+.hero-slide {
+    width: 33.333%;
+    flex-shrink: 0;
+}
+
+.hero-slider-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hero-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.hero-dot.active {
+    background: var(--accent-blue);
+    width: 20px;
+    border-radius: 4px;
+}
+
+
