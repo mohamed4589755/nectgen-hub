@@ -17,7 +17,7 @@
     --gradient-glow: none;
     --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.04);
     --radius-sm: 8px;
-    --radius-md: 18px;
+    --radius-md: 16px;
     --radius-lg: 24px;
     --radius-pill: 980px;
     --transition-smooth: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
@@ -83,6 +83,10 @@ h3, h4, h5, h6 {
     color: var(--text-main);
 }
 
+.hero-subtitle, .section-subtitle, .card-desc, p {
+    max-width: 70ch; /* Enforce 70-character line length limit for optimal readability */
+}
+
 a {
     color: var(--accent-blue);
     text-decoration: none;
@@ -108,7 +112,7 @@ a:hover {
 }
 
 .section-padding {
-    padding: 70px 0; /* Compact layouts for reduced length */
+    padding: 96px 0; /* Airy feel, strict multiple of 8 (8 * 12) */
 }
 
 .text-center {
@@ -259,10 +263,10 @@ header.scrolled {
 /* --- HERO SECTION --- */
 .hero {
     position: relative;
-    min-height: 70vh; /* Reduced from 90vh to reduce length */
+    min-height: 80vh; /* Strict multiple of 8 */
     display: flex;
     align-items: center;
-    padding: 120px 0 60px; /* Compact padding */
+    padding: 128px 0 64px; /* Multiples of 8 */
     background: #FFFFFF;
 }
 
@@ -281,7 +285,7 @@ header.scrolled {
     font-size: 4rem; /* Big bold typography */
     font-weight: 800;
     line-height: 1.05;
-    margin-bottom: 20px;
+    margin-bottom: 24px; /* Multiple of 8 */
 }
 
 .hero-subtitle {
@@ -446,15 +450,15 @@ header.scrolled {
 
 .card {
     background: var(--bg-secondary);
-    padding: 36px 32px;
-    border-radius: var(--radius-md);
+    padding: 32px; /* Symmetrical consistent padding, multiple of 8 */
+    border-radius: var(--radius-md); /* 16px, multiple of 8 */
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
     height: 100%;
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.08); /* Clean thin border */
+    box-shadow: none; /* Flat clean aesthetic, no drop shadows */
     text-align: left;
 }
 
