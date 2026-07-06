@@ -1200,11 +1200,12 @@ body.rtl .whatsapp-float {
 
 /* --- CORE TECHNOLOGIES TECH STACK SECTION --- */
 .tech-stack-row {
-    display: flex;
-    justify-content: center;
-    gap: 80px; /* Symmetrical spacing */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px; /* Enforced 8-point grid gap */
+    justify-items: center;
     align-items: center;
-    margin: 40px auto 20px;
+    margin: 32px auto 16px;
     max-width: 800px;
 }
 
@@ -1236,7 +1237,8 @@ body.rtl .whatsapp-float {
 
 @media (max-width: 768px) {
     .tech-stack-row {
-        gap: 40px; /* Tighter gap on mobile */
+        grid-template-columns: repeat(3, 1fr); /* 2 rows of 3 on mobile */
+        gap: 24px;
     }
     .tech-icon {
         width: 40px;
