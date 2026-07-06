@@ -213,13 +213,6 @@ header.scrolled {
     opacity: 0.8;
 }
 
-.logo span {
-    font-size: 1.35rem;
-}
-
-.logo-dot {
-    color: var(--accent-blue);
-}
 
 .nav-menu {
     display: flex;
@@ -1035,8 +1028,17 @@ footer {
         left: 0;
     }
     
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        direction: ltr !important; /* Always keep logo on the left, hamburger toggle on the right */
+    }
+    
     .nav-toggle {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     /* Toggle active animation */
@@ -1147,14 +1149,6 @@ body.rtl .footer-brand, body.rtl .footer-nav, body.rtl .footer-bottom {
     text-align: right;
 }
 
-body.rtl .logo {
-    flex-direction: row-reverse;
-}
-
-body.rtl .logo-icon {
-    margin-left: 6px;
-    margin-right: 0;
-}
 
 body.rtl .nav-menu {
     flex-direction: row-reverse;
