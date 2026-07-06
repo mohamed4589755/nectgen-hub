@@ -1167,7 +1167,8 @@ body.rtl .slide-btn {
     position: fixed;
     bottom: 24px;
     right: 24px;
-    background-color: #25D366; /* Official WhatsApp Green */
+    --wa-bg: #25D366;
+    background-color: var(--wa-bg);
     color: white;
     width: 56px;
     height: 56px;
@@ -1183,7 +1184,7 @@ body.rtl .slide-btn {
 .whatsapp-float:hover {
     transform: scale(1.08) translateY(-3px);
     box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35);
-    background-color: #20BA5A;
+    --wa-bg: #20BA5A;
 }
 
 /* Flip WhatsApp button position for Arabic RTL layouts */
