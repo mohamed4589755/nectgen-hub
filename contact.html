@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Header Navigation -->
     <header>
@@ -32,7 +33,7 @@
     </header>
 
     <!-- Subpage Hero Banner -->
-    <section class="section-padding" style="padding-top: 150px; background: radial-gradient(circle at 10% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 60%); border-bottom: 1px solid var(--glass-border);">
+    <section class="fade-up section-padding" style="padding-top: 150px; background: radial-gradient(circle at 10% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 60%); border-bottom: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-tag" data-i18n="contact_banner_tag">Get in Touch</span>
             <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 16px;" data-i18n="contact_banner_title">Contact <span class="gradient-text">Our Team</span></h1>
@@ -41,7 +42,7 @@
     </section>
 
     <!-- Contact Form & Info Details -->
-    <section class="section-padding">
+    <section class="fade-up section-padding">
         <div class="container contact-grid">
             
             <!-- Contact Info -->
@@ -183,5 +184,6 @@
             }
         });
     </script>
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
 </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Header Navigation -->
     <header>
@@ -32,7 +33,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="fade-up hero">
         <div class="hero-glow"></div>
         <div class="container hero-grid">
             <div class="hero-content">
@@ -76,17 +77,17 @@
     </section>
 
     <!-- Stats & Achievements -->
-    <section class="container" style="margin-top: -60px; position: relative; z-index: 5;">
+    <section class="fade-up container" style="margin-top: -60px; position: relative; z-index: 5;">
         <div class="stats-grid glass-panel">
-            <div class="stat-card">
+            <div class="stagger-1 stat-card">
                 <div class="stat-number gradient-text" id="statGrads" data-i18n="index_stat_grads">500+</div>
                 <div class="stat-label" data-i18n="index_stat_grads_label">Graduates</div>
             </div>
-            <div class="stat-card">
+            <div class="stagger-2 stat-card">
                 <div class="stat-number gradient-text" id="statPartners" data-i18n="index_stat_partners">15+</div>
                 <div class="stat-label" data-i18n="index_stat_partners_label">Industry Partners</div>
             </div>
-            <div class="stat-card">
+            <div class="stagger-3 stat-card">
                 <div class="stat-number gradient-text" id="statRate" data-i18n="index_stat_rate">94%</div>
                 <div class="stat-label" data-i18n="index_stat_rate_label">Employment Rate</div>
             </div>
@@ -94,7 +95,7 @@
     </section>
 
     <!-- Core Technologies Section -->
-    <section class="section-padding" style="padding-top: 40px; padding-bottom: 20px;">
+    <section class="fade-up section-padding" style="padding-top: 40px; padding-bottom: 20px;">
         <div class="container">
             <div class="section-title-wrap" style="text-align: center !important; margin-bottom: 30px;">
                 <span class="section-tag" data-i18n="index_tech_tag" style="display: block; margin: 0 auto 8px; text-align: center;">Core Technologies</span>
@@ -160,7 +161,7 @@
     </section>
 
     <!-- Core Values Section -->
-    <section class="section-padding">
+    <section class="fade-up section-padding">
         <div class="container">
             <div class="section-title-wrap">
                 <span class="section-tag" data-i18n="index_values_tag">Why Choose Us</span>
@@ -192,7 +193,7 @@
     </section>
 
     <!-- Student Success Stories (Slideshow) -->
-    <section class="section-padding" style="background: var(--bg-tertiary); border-top: 1px solid rgba(15, 23, 42, 0.05); border-bottom: 1px solid rgba(15, 23, 42, 0.05);">
+    <section class="fade-up section-padding" style="background: var(--bg-tertiary); border-top: 1px solid rgba(15, 23, 42, 0.05); border-bottom: 1px solid rgba(15, 23, 42, 0.05);">
         <div class="container">
             <div class="section-title-wrap">
                 <span class="section-tag" data-i18n="slide_tag">Success Stories</span>
@@ -246,7 +247,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="section-padding">
+    <section class="fade-up section-padding">
         <div class="container">
             <h2 class="section-title" style="margin-bottom: 24px;" data-i18n="index_cta_title">Ready to Start Your Tech Journey?</h2>
             <p class="section-subtitle" style="margin-bottom: 40px;" data-i18n="index_cta_sub">Applications for our upcoming summer cohort are now open. Spaces are limited for high-touch mentorship.</p>
@@ -290,6 +291,7 @@
 
     <script src="main.js"></script>
     <script src="lang.js"></script>
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
 </body>
 </html>
 <!-- Trigger deployment 5 -->

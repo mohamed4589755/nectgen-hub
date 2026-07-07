@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Header Navigation -->
     <header>
@@ -32,7 +33,7 @@
     </header>
 
     <!-- Subpage Hero Banner -->
-    <section class="section-padding" style="padding-top: 150px; background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.06) 0%, transparent 60%); border-bottom: 1px solid var(--glass-border);">
+    <section class="fade-up section-padding" style="padding-top: 150px; background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.06) 0%, transparent 60%); border-bottom: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-tag" data-i18n="diploma_tag">Long-Term Specialization</span>
             <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 16px;" data-i18n="diploma_title">Professional <span class="gradient-text">Diplomas</span></h1>
@@ -41,7 +42,7 @@
     </section>
 
     <!-- Diplomas List Section -->
-    <section class="section-padding">
+    <section class="fade-up section-padding">
         <div class="container">
             <div class="section-title-wrap text-center">
                 <h2 class="section-title" data-i18n="diploma_list_title">Available Specialization Tracks</h2>
@@ -101,7 +102,7 @@
     </section>
 
     <!-- Why Diplomas Section -->
-    <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
+    <section class="fade-up section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <div class="section-title-wrap text-center">
                 <span class="section-tag" data-i18n="diploma_benefits_tag">Career Placement</span>
@@ -158,5 +159,6 @@
 
     <script src="main.js"></script>
     <script src="lang.js"></script>
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
 </body>
 </html>
