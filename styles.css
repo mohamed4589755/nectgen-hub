@@ -214,10 +214,9 @@ header.scrolled {
 }
 
 .logo-img {
-    height: 48px; /* Compliant 8-point grid sizing */
+    height: 32px; /* Strict multiple of 8 (8 * 4) */
     width: auto;
     display: block;
-    margin: -8px 0; /* Pulls vertical padding to keep header height standard */
 }
 
 
