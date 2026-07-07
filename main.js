@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- WhatsApp Floating Button Injection ---
     const whatsappNumber = "201206751361";
-    const whatsappText = "Hello NextGen Hub, I am interested in your programs!";
+    const whatsappText = "Hello NextGen Institute, I am interested in your programs!";
     
     const waBtn = document.createElement('a');
     waBtn.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
