@@ -214,7 +214,7 @@ header.scrolled {
 }
 
 .logo-img {
-    height: 80px; /* Scaled to match the visual aspect ratio and width of Sprint's logo */
+    height: 100px; /* Scaled to 100px per user request */
     width: auto;
     display: block;
 }
