@@ -214,7 +214,7 @@ header.scrolled {
 }
 
 .logo-img {
-    height: 40px; /* Strict multiple of 8 (8 * 5) */
+    height: 32px; /* Strict multiple of 8 (8 * 4) */
     width: auto;
     display: block;
 }
