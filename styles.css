@@ -212,6 +212,8 @@ header.scrolled {
     font-weight: 600;
     letter-spacing: -0.02em;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 12px;
     gap: 6px;
