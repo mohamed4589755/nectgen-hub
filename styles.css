@@ -101,7 +101,7 @@ a:hover {
 /* --- UTILITIES & LAYOUT --- */
 .container {
     width: 100%;
-    max-width: 1080px; /* Apple clean compact container size */
+    max-width: 1240px; /* Wider desktop container to decrease left-right margins */
     margin: 0 auto;
     padding: 0 22px;
 }
@@ -1427,4 +1427,18 @@ body::after {
     bottom: -20vw;
     right: -20vw;
     background: var(--accent-cyan);
+}
+
+/* Helper styles for SVG icons inside card-icon and contact-info-icon */
+.card-icon svg {
+    width: 24px;
+    height: 24px;
+    color: inherit;
+    display: block;
+}
+.contact-info-icon svg {
+    width: 20px;
+    height: 20px;
+    color: inherit;
+    display: block;
 }
