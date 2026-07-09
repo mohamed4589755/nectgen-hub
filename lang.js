@@ -427,53 +427,85 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggle = document.getElementById('langToggle');
     let currentLang = localStorage.getItem('selectedLang') || 'en';
     
-    // Create/Insert Language switch button dynamically into navbar if not present
+    // Create/Insert Language switch dropdown dynamically into navbar if not present
     const insertLangButton = () => {
         const navMenu = document.getElementById('navMenu');
-        if (navMenu && !document.getElementById('langToggle')) {
+        if (navMenu && !document.getElementById('langDropdownContainer')) {
             const li = document.createElement('li');
-            li.style.display = 'flex';
-            li.style.alignItems = 'center';
+            li.id = 'langDropdownContainer';
+            li.className = 'lang-dropdown-container';
             
+            // Create main button
             const btn = document.createElement('button');
-            btn.id = 'langToggle';
-            btn.className = 'btn';
-            btn.style.width = '32px';
-            btn.style.height = '32px';
-            btn.style.padding = '0';
-            btn.style.background = 'var(--bg-secondary)';
-            btn.style.border = '1px solid var(--glass-border)';
-            btn.style.borderRadius = '50%';
-            btn.style.cursor = 'pointer';
-            btn.style.color = 'var(--text-main)';
-            btn.style.display = 'flex';
-            btn.style.alignItems = 'center';
-            btn.style.justifyContent = 'center';
-            btn.style.marginLeft = '12px';
-            btn.style.transition = 'var(--transition-smooth)';
+            btn.id = 'langToggleBtn';
+            btn.className = 'lang-dropdown-btn';
             
-            // Inject Feather Globe SVG
-            btn.innerHTML = `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: block; flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
+            // Globe icon SVG
+            const globeSvg = `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
             
-            // Hover effect
-            btn.onmouseover = () => {
-                btn.style.background = 'var(--accent-blue)';
-                btn.style.color = 'var(--text-dark)';
-                btn.style.borderColor = 'transparent';
-            };
-            btn.onmouseout = () => {
-                btn.style.background = 'var(--bg-secondary)';
-                btn.style.color = 'var(--text-main)';
-                btn.style.borderColor = 'var(--glass-border)';
-            };
+            // Chevron down SVG
+            const chevronSvg = `<svg class="chevron-icon" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-left: 2px; transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>`;
+            
+            btn.innerHTML = `${globeSvg} <span class="active-lang-text">EN</span> ${chevronSvg}`;
+            
+            // Create dropdown menu
+            const menu = document.createElement('ul');
+            menu.id = 'langDropdownMenu';
+            menu.className = 'lang-dropdown-menu';
+            
+            // English option
+            const optEn = document.createElement('li');
+            optEn.className = 'lang-dropdown-item';
+            optEn.textContent = 'English';
+            optEn.setAttribute('data-lang', 'en');
+            
+            // Arabic option
+            const optAr = document.createElement('li');
+            optAr.className = 'lang-dropdown-item';
+            optAr.textContent = 'العربية';
+            optAr.setAttribute('data-lang', 'ar');
+            
+            menu.appendChild(optEn);
+            menu.appendChild(optAr);
             
             li.appendChild(btn);
+            li.appendChild(menu);
+            
+            // Append to navMenu
             navMenu.appendChild(li);
             
-            btn.addEventListener('click', () => {
-                currentLang = currentLang === 'en' ? 'ar' : 'en';
-                localStorage.setItem('selectedLang', currentLang);
-                applyLanguage(currentLang);
+            // Click listener for button (toggle menu)
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('show');
+                btn.classList.toggle('active');
+            });
+            
+            // Click listeners for options
+            optEn.addEventListener('click', () => {
+                if (currentLang !== 'en') {
+                    currentLang = 'en';
+                    localStorage.setItem('selectedLang', currentLang);
+                    applyLanguage(currentLang);
+                }
+                menu.classList.remove('show');
+                btn.classList.remove('active');
+            });
+            
+            optAr.addEventListener('click', () => {
+                if (currentLang !== 'ar') {
+                    currentLang = 'ar';
+                    localStorage.setItem('selectedLang', currentLang);
+                    applyLanguage(currentLang);
+                }
+                menu.classList.remove('show');
+                btn.classList.remove('active');
+            });
+            
+            // Close dropdown when clicking anywhere else
+            document.addEventListener('click', () => {
+                menu.classList.remove('show');
+                btn.classList.remove('active');
             });
         }
     };
@@ -502,6 +534,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = el.getAttribute('data-i18n-placeholder');
             if (translations[lang] && translations[lang][key]) {
                 el.setAttribute('placeholder', translations[lang][key]);
+            }
+        });
+        
+        // Update active language label in dropdown button
+        const activeLangText = document.querySelector('.active-lang-text');
+        if (activeLangText) {
+            activeLangText.textContent = lang === 'en' ? 'EN' : 'العربية';
+        }
+        
+        // Highlight active dropdown item
+        document.querySelectorAll('.lang-dropdown-item').forEach(item => {
+            const itemLang = item.getAttribute('data-lang');
+            if (itemLang === lang) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
             }
         });
         
