@@ -1468,14 +1468,13 @@ body::after {
 .logo-text-top {
     font-size: 1.35rem;
     font-weight: 800;
-    color: var(--text-main);
+    color: #151e26; /* Exact brand charcoal-navy color */
     letter-spacing: -0.02em;
 }
 .logo-text-bottom {
     font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--text-main);
-    opacity: 0.85;
+    font-weight: 600;
+    color: #3b5772; /* Exact brand slate-blue color */
     letter-spacing: -0.02em;
 }
 
