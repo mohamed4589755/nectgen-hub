@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Bootcamps - NextGen Institute</title>
     <meta name="description" content="View upcoming summer bootcamps in Data Analytics and AI/ML at NextGen Institute. Complete course schedule from July 1, 2026 to October 1, 2026.">
-    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css?v=4">
+    <script>
+        if (localStorage.getItem('selectedTheme') === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
 </head>
 <body>
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -198,8 +203,8 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
-    <script src="lang.js"></script>
+    <script src="main.js?v=4"></script>
+    <script src="lang.js?v=4"></script>
     <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
 </body>
 </html>
