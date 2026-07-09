@@ -1479,3 +1479,80 @@ body::after {
 }
 
 
+
+/* Dark Theme Variables */
+body.dark-theme, html.dark-theme {
+    --bg-primary: #0A0A0C;
+    --bg-secondary: #121215;
+    --bg-tertiary: #16161A;
+    --accent-blue: #3b82f6;
+    --accent-violet: #F5F5F7;
+    --accent-cyan: #60a5fa;
+    --text-main: #ECECEF;
+    --text-muted: #8E919A;
+    --text-dark: #FFFFFF;
+    --glass-bg: rgba(18, 18, 22, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    --gradient-glow: 0 0 30px rgba(59, 130, 246, 0.2);
+    --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjustments for logo in dark theme */
+body.dark-theme .logo-text-top {
+    color: #FFFFFF !important;
+}
+body.dark-theme .logo-text-bottom {
+    color: #9CA3AF !important;
+}
+
+/* Form input styling for dark theme */
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea,
+body.dark-theme .form-group select {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-theme .form-group input:focus,
+body.dark-theme .form-group textarea:focus,
+body.dark-theme .form-group select:focus {
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* Custom dark theme adjustments to prevent white backgrounds */
+body.dark-theme .card {
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+}
+
+body.dark-theme .btn-secondary {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+}
+
+body.dark-theme .btn-secondary:hover {
+    background: var(--accent-blue);
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+/* Ensure the hero slider handles dark backgrounds beautifully */
+body.dark-theme .hero-dot {
+    background: rgba(255, 255, 255, 0.2);
+}
+body.dark-theme .hero-dot.active {
+    background: var(--accent-blue);
+}
+
+/* Smooth transition for theme switching */
+body {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.card, .glass-panel, header, footer, a, span, p, h1, h2, h3, h4, h5, h6, input, textarea, select, button {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, opacity 0.3s ease;
+}
