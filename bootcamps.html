@@ -50,93 +50,102 @@
         </div>
     </section>
 
-    <!-- Schedule Table Section -->
+        <!-- Bootcamps Grid Section -->
     <section class="fade-up section-padding">
         <div class="container">
             <div class="section-title-wrap text-center">
-                <h2 class="section-title" data-i18n="boot_schedule_title">Program Schedule & Curriculum</h2>
-                <p class="section-subtitle" data-i18n="boot_schedule_sub">Timeline: <b>July 1, 2026 to October 1, 2026</b>. Sessions are held live online with interactive laboratory hours.</p>
+                <h2 class="section-title" data-i18n="boot_grid_title">Curriculum & Programs</h2>
+                <p class="section-subtitle" data-i18n="boot_grid_sub">Choose your learning path. Our cohort-based bootcamps feature live interactive sessions, hands-on lab projects, and certified graduation certificates.</p>
             </div>
 
-            <!-- Schedule Table Wrapper -->
-            <div class="table-responsive">
-                <table class="schedule-table" id="scheduleTable">
-                    <thead>
-                        <tr>
-                            <th data-i18n="boot_table_th_phase">Phase & Date</th>
-                            <th data-i18n="boot_table_th_data">Data Analytics Track</th>
-                            <th data-i18n="boot_table_th_ai">AI / Machine Learning Track</th>
-                            <th data-i18n="boot_table_th_status">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <b data-i18n="boot_table_w14">Weeks 1 - 4</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_w14_date">Jul 1 - Jul 28, 2026</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_w14_data_t">Foundations of Business Data</b><br>
-                                <span data-i18n="boot_table_w14_data_d">Advanced SQL queries, schema structures, and data manipulation in PostgreSQL.</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_w14_ai_t">Mathematical Foundations & PyTorch</b><br>
-                                <span data-i18n="boot_table_w14_ai_d">Linear algebra, calculus, probability, and basic neural network design in PyTorch.</span>
-                            </td>
-                            <td><span class="status-badge status-upcoming" data-i18n="boot_table_status_upcoming">Upcoming</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b data-i18n="boot_table_w58">Weeks 5 - 8</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_w58_date">Jul 29 - Aug 25, 2026</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_w58_data_t">Data Visualizations & BI</b><br>
-                                <span data-i18n="boot_table_w58_data_d">Transforming data into insights with PowerBI, Tableau, and custom Python plots (Seaborn).</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_w58_ai_t">Supervised & Unsupervised Learning</b><br>
-                                <span data-i18n="boot_table_w58_ai_d">Regressions, classification models, decision trees, clustering (K-Means), and validation metrics.</span>
-                            </td>
-                            <td><span class="status-badge status-upcoming" data-i18n="boot_table_status_upcoming">Upcoming</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b data-i18n="boot_table_w912">Weeks 9 - 12</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_w912_date">Aug 26 - Sep 22, 2026</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_w912_data_t">Exploratory Analysis & Wrangling</b><br>
-                                <span data-i18n="boot_table_w912_data_d">NumPy, Pandas, missing value treatments, and advanced feature engineering methodologies.</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_w912_ai_t">Deep Learning & Large Models</b><br>
-                                <span data-i18n="boot_table_w912_ai_d">CNNs for Computer Vision, Transformers for NLP, and fine-tuning Open-Source LLMs.</span>
-                            </td>
-                            <td><span class="status-badge status-open" data-i18n="boot_table_status_open">Open for Reg</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b data-i18n="boot_table_wfinal">Final Cohort Week</b><br>
-                                <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="boot_table_wfinal_date">Sep 23 - Oct 1, 2026</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_wfinal_data_t">Capstone Business Analytics Project</b><br>
-                                <span data-i18n="boot_table_wfinal_data_d">Interactive reporting dashboard deployed on cloud to solve a logistics optimization case study.</span>
-                            </td>
-                            <td>
-                                <b data-i18n="boot_table_wfinal_ai_t">MLOps & Model Deployment</b><br>
-                                <span data-i18n="boot_table_wfinal_ai_d">Wrapping algorithms inside FastAPI, containerizing with Docker, and cloud orchestration.</span>
-                            </td>
-                            <td><span class="status-badge status-open" data-i18n="boot_table_status_open">Open for Reg</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="cards-grid">
+                <!-- Card 1: AI & ML Bootcamp -->
+                <div class="card glass-panel" id="bootCard1" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_ml_engineer.jpg?v=8" alt="AI & Machine Learning Bootcamp">
+                    </div>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="boot_role1_tag1">AI & Machine Learning</span>
+                            <span class="tag" data-i18n="boot_role1_tag2">Online</span>
+                            <span class="tag" data-i18n="boot_role1_tag3">Certified</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="boot_role1_title">AI & Machine Learning Bootcamp</h3>
+                        <p class="card-desc" data-i18n="boot_role1_desc">
+                            Master mathematical foundations, PyTorch, supervised learning algorithms, neural network design, computer vision, NLP, and model deployment using FastAPI and Docker.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="boot_duration_label">Duration:</span> <b data-i18n="boot_duration_3m">3 Months</b></span>
+                            <a href="contact.html?bootcamp=AI_ML" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyBoot1" data-i18n="boot_apply_btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Enrollment CTA -->
-            <div style="margin-top: 48px;">
-                <a href="contact.html?inquiry=Bootcamp_Registration" class="btn btn-primary" id="registerCta" data-i18n="boot_register_cta">Reserve My Spot</a>
+                <!-- Card 2: Data Analytics Bootcamp -->
+                <div class="card glass-panel" id="bootCard2" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_data_analytics.jpg?v=8" alt="Data Analytics Bootcamp">
+                    </div>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="boot_role2_tag1">Data Analytics</span>
+                            <span class="tag" data-i18n="boot_role2_tag2">Online</span>
+                            <span class="tag" data-i18n="boot_role2_tag3">Certified</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="boot_role2_title">Data Analytics Bootcamp</h3>
+                        <p class="card-desc" data-i18n="boot_role2_desc">
+                            Transform into a business intelligence expert. Write advanced SQL queries, design interactive dashboards in PowerBI/Tableau, and wrangle data using Pandas and NumPy.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="boot_duration_label">Duration:</span> <b data-i18n="boot_duration_3m">3 Months</b></span>
+                            <a href="contact.html?bootcamp=Data_Analytics" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyBoot2" data-i18n="boot_apply_btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Flutter Developer Bootcamp -->
+                <div class="card glass-panel" id="bootCard3" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_flutter.jpg?v=9" alt="Flutter Developer Bootcamp">
+                    </div>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="boot_role3_tag1">Flutter Development</span>
+                            <span class="tag" data-i18n="boot_role3_tag2">Online</span>
+                            <span class="tag" data-i18n="boot_role3_tag3">Certified</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="boot_role3_title">Flutter Developer Bootcamp</h3>
+                        <p class="card-desc" data-i18n="boot_role3_desc">
+                            Build fully functional native iOS and Android apps. Master Dart programming language, fluid UI layout widgets, advanced state management, and web API integration.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="boot_duration_label">Duration:</span> <b data-i18n="boot_duration_3m">3 Months</b></span>
+                            <a href="contact.html?bootcamp=Flutter_Dev" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyBoot3" data-i18n="boot_apply_btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Front-End Web Developer Bootcamp -->
+                <div class="card glass-panel" id="bootCard4" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_frontend.jpg?v=8" alt="Front-End Web Developer Bootcamp">
+                    </div>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="boot_role4_tag1">Front-End Web Dev</span>
+                            <span class="tag" data-i18n="boot_role4_tag2">Online</span>
+                            <span class="tag" data-i18n="boot_role4_tag3">Certified</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="boot_role4_title">Front-End Web Developer Bootcamp</h3>
+                        <p class="card-desc" data-i18n="boot_role4_desc">
+                            Create responsive, pixel-perfect user interfaces. Learn advanced CSS animations, flexbox/grid layouts, semantic HTML5, DOM manipulation, and interactive JS modules.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="boot_duration_label">Duration:</span> <b data-i18n="boot_duration_3m">3 Months</b></span>
+                            <a href="contact.html?bootcamp=Frontend_Dev" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyBoot4" data-i18n="boot_apply_btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
