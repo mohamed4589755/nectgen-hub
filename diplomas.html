@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Diplomas - NextGen Institute</title>
     <meta name="description" content="Enroll in NextGen Institute's professional diplomas in AI and Data Analytics. Comprehensive 6 to 9-month programs with industry certification and co-op placement.">
-        <link rel="stylesheet" href="styles.css?v=10">
+        <link rel="stylesheet" href="styles.css?v=11">
     <script>
         if (localStorage.getItem('selectedTheme') === 'dark') {
             document.documentElement.classList.add('dark-theme');
@@ -50,60 +50,100 @@
         </div>
     </section>
 
-    <!-- Diplomas List Section -->
+        <!-- Diplomas List Section -->
     <section class="fade-up section-padding">
         <div class="container">
             <div class="section-title-wrap text-center">
-                <h2 class="section-title" data-i18n="diploma_list_title">Available Specialization Tracks</h2>
-                <p class="section-subtitle" data-i18n="diploma_list_sub">Choose a professional track. Each diploma includes weekly coding labs, live case studies, and a final capstone reviewed by industry experts.</p>
+                <h2 class="section-title" data-i18n="diploma_grid_title">Available Specialization Tracks</h2>
+                <p class="section-subtitle" data-i18n="diploma_grid_sub">Choose a professional track. Each diploma includes weekly coding labs, live case studies, and a final capstone reviewed by industry experts.</p>
             </div>
 
             <div class="cards-grid">
-                <!-- Diploma 1 -->
-                <div class="card glass-panel" id="diplomaCard1">
-                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></div>
-                    <div class="card-tags">
-                        <span class="tag tag-highlight" data-i18n="intern_role1_tag1">Artificial Intelligence</span>
-                        <span class="tag" data-i18n="intern_role3_tag1">6 Months</span>
-                        <span class="tag" data-i18n="diploma_d1_f4">Certification</span>
+                <!-- Card 1: AI & ML Diploma -->
+                <div class="card glass-panel" id="diplomaCard1" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_ml_engineer.jpg?v=8" alt="AI & Machine Learning Diploma">
                     </div>
-                    <h3 class="card-title" data-i18n="diploma_d1_title">Advanced AI & Deep Learning Diploma</h3>
-                    <p class="card-desc" data-i18n="diploma_d1_desc">
-                        A rigorous curriculum focusing on advanced neural networks, natural language processing, computer vision, and modern generative AI architectures. Built for aspiring AI specialists and software engineers.
-                    </p>
-                    <ul style="list-style: none; margin-bottom: 28px; font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px; text-align: left;">
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d1_f1">Deep Learning & Math Foundations</span></li>
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d1_f2">Natural Language Processing & LLMs</span></li>
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d1_f3">Computer Vision & Image Processing</span></li>
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d1_f4">MLOps, Docker, and Cloud Deployment</span></li>
-                    </ul>
-                    <div class="card-footer">
-                        <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="diploma_format_label">Format:</span> <b data-i18n="diploma_format_val">Hybrid / Online</b></span>
-                        <a href="contact.html?inquiry=AI_Diploma" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="learnDiploma1" data-i18n="diploma_enroll_btn">Enroll Inquiry</a>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="diploma_role1_tag1">AI & Machine Learning</span>
+                            <span class="tag" data-i18n="diploma_role1_tag2">Online</span>
+                            <span class="tag" data-i18n="diploma_role1_tag3">Co-Op Placement</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="diploma_role1_title">AI & Machine Learning Diploma</h3>
+                        <p class="card-desc" data-i18n="diploma_role1_desc">
+                            A comprehensive specialization covering PyTorch, deep neural networks, computer vision algorithms, large language models (LLMs), fine-tuning techniques, and MLOps pipelines.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="diploma_duration_label">Duration:</span> <b data-i18n="diploma_duration_6m">6 Months</b></span>
+                            <a href="contact.html?diploma=AI_ML" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyDiploma1" data-i18n="diploma_apply_btn">Register Now</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Diploma 2 -->
-                <div class="card glass-panel" id="diplomaCard2">
-                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="16"/><line x1="15" y1="22" x2="15" y2="16"/><line x1="9" y1="16" x2="15" y2="16"/><path d="M8 6h2v2H8V6zm0 4h2v2H8v-2zm0 4h2v2H8v-2zm6-8h2v2h-2V6zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2z"/></svg></div>
-                    <div class="card-tags">
-                        <span class="tag tag-highlight" data-i18n="intern_role2_tag1">Data Analytics</span>
-                        <span class="tag">9 Months</span>
-                        <span class="tag" data-i18n="diploma_ben1_title">Co-op Placement</span>
+                <!-- Card 2: Data Analytics Diploma -->
+                <div class="card glass-panel" id="diplomaCard2" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_data_analytics.jpg?v=8" alt="Data Analytics Diploma">
                     </div>
-                    <h3 class="card-title" data-i18n="diploma_d2_title">Enterprise Data Analytics & Engineering</h3>
-                    <p class="card-desc" data-i18n="diploma_d2_desc">
-                        Master the architectures of enterprise business intelligence. Learn SQL database modeling, big data wrangling with Python, and cloud-native dashboard automation.
-                    </p>
-                    <ul style="list-style: none; margin-bottom: 28px; font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px; text-align: left;">
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d2_f1">Advanced SQL & Relational Databases</span></li>
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d2_f2">Python Data Analysis (Pandas, Numpy)</span></li>
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d2_f3">BI Architectures (PowerBI, Tableau)</span></li>
-                        <li><span style="color: var(--accent-cyan); margin-right: 8px; font-weight: bold;">✓</span><span data-i18n="diploma_d2_f4">Cloud Data Warehousing (Snowflake/AWS)</span></li>
-                    </ul>
-                    <div class="card-footer">
-                        <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="diploma_format_label">Format:</span> <b data-i18n="diploma_format_val">Hybrid / Online</b></span>
-                        <a href="contact.html?inquiry=Data_Diploma" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="learnDiploma2" data-i18n="diploma_enroll_btn">Enroll Inquiry</a>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="diploma_role2_tag1">Data Analytics</span>
+                            <span class="tag" data-i18n="diploma_role2_tag2">Online</span>
+                            <span class="tag" data-i18n="diploma_role2_tag3">Co-Op Placement</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="diploma_role2_title">Data Analytics Diploma</h3>
+                        <p class="card-desc" data-i18n="diploma_role2_desc">
+                            Master the core methods of enterprise business intelligence. Learn SQL database design, Python data analysis, PowerBI dashboard orchestration, and cloud warehousing.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="diploma_duration_label">Duration:</span> <b data-i18n="diploma_duration_6m">6 Months</b></span>
+                            <a href="contact.html?diploma=Data_Analytics" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyDiploma2" data-i18n="diploma_apply_btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Flutter Developer Diploma -->
+                <div class="card glass-panel" id="diplomaCard3" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_flutter.jpg?v=9" alt="Flutter Developer Diploma">
+                    </div>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="diploma_role3_tag1">Flutter Development</span>
+                            <span class="tag" data-i18n="diploma_role3_tag2">Online</span>
+                            <span class="tag" data-i18n="diploma_role3_tag3">Co-Op Placement</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="diploma_role3_title">Flutter Developer Diploma</h3>
+                        <p class="card-desc" data-i18n="diploma_role3_desc">
+                            Learn Dart programming, app state management (Bloc/Provider), hardware native features integration, responsive layouts, API bindings, and app store deployment.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="diploma_duration_label">Duration:</span> <b data-i18n="diploma_duration_6m">6 Months</b></span>
+                            <a href="contact.html?diploma=Flutter_Dev" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyDiploma3" data-i18n="diploma_apply_btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Front-End Web Developer Diploma -->
+                <div class="card glass-panel" id="diplomaCard4" style="padding: 0; overflow: hidden;">
+                    <div class="card-image-wrap">
+                        <img src="assets/intern_frontend.jpg?v=8" alt="Front-End Web Developer Diploma">
+                    </div>
+                    <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <div class="card-tags">
+                            <span class="tag tag-highlight" data-i18n="diploma_role4_tag1">Front-End Web Dev</span>
+                            <span class="tag" data-i18n="diploma_role4_tag2">Online</span>
+                            <span class="tag" data-i18n="diploma_role4_tag3">Co-Op Placement</span>
+                        </div>
+                        <h3 class="card-title" data-i18n="diploma_role4_title">Front-End Web Developer Diploma</h3>
+                        <p class="card-desc" data-i18n="diploma_role4_desc">
+                            Master modern UI engineering. Build fully responsive portals using semantic HTML5, advanced CSS, flexbox/grid layout design, JavaScript DOM bindings, and React frameworks.
+                        </p>
+                        <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="diploma_duration_label">Duration:</span> <b data-i18n="diploma_duration_6m">6 Months</b></span>
+                            <a href="contact.html?diploma=Frontend_Dev" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyDiploma4" data-i18n="diploma_apply_btn">Register Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,8 +210,123 @@
         </div>
     </footer>
 
-    <script src="main.js?v=10"></script>
-    <script src="lang.js?v=10"></script>
+    <script src="main.js?v=11"></script>
+    <script src="lang.js?v=11"></script>
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="registrationModal">
+        <div class="modal-content glass-panel">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+            <h3 class="modal-title" id="modalTitle">Register for Diploma</h3>
+            <p class="modal-subtitle" id="modalSubtitle" data-i18n="form_modal_sub">Please fill out the form below to apply.</p>
+            
+            <form class="modal-form" id="diplomaForm">
+                <input type="hidden" id="selectedRole" name="role">
+                
+                <div class="form-group">
+                    <label for="fullName" data-i18n="form_name_label">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="emailAddress" data-i18n="form_email_label">Email Address</label>
+                    <input type="email" id="emailAddress" required placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phoneNumber" data-i18n="form_phone_label">Phone Number</label>
+                    <input type="tel" id="phoneNumber" required placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="university" data-i18n="form_uni_label">University & Major</label>
+                    <input type="text" id="university" required placeholder="e.g. Cairo University, Computer Science">
+                </div>
+
+                <div class="form-group">
+                    <label for="cvLink" data-i18n="form_cv_label">Resume Link (Google Drive/Dropbox)</label>
+                    <input type="url" id="cvLink" required placeholder="https://drive.google.com/...">
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100" style="margin-top: 15px; width: 100%;" data-i18n="form_submit_btn">Submit Application</button>
+            </form>
+            
+            <!-- Success Message -->
+            <div class="form-success" id="formSuccess">
+                <svg class="success-icon" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--accent-blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 16px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h4 data-i18n="form_success_title">Application Submitted!</h4>
+                <p data-i18n="form_success_desc">Thank you for applying. Our team will review your CV and contact you soon.</p>
+                <button class="btn btn-secondary" id="successCloseBtn" style="margin-top: 15px; padding: 8px 24px;" data-i18n="form_close_btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('registrationModal');
+            const form = document.getElementById('diplomaForm');
+            const successScreen = document.getElementById('formSuccess');
+            const closeBtn = document.getElementById('modalCloseBtn');
+            const successCloseBtn = document.getElementById('successCloseBtn');
+            const modalTitle = document.getElementById('modalTitle');
+            const selectedRoleInput = document.getElementById('selectedRole');
+            
+            // Open modal on Apply button click
+            document.querySelectorAll('[id^="applyDiploma"]').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    const card = btn.closest('.card');
+                    const titleText = card.querySelector('.card-title').textContent;
+                    const diplomaId = btn.getAttribute('href').split('diploma=')[1] || '';
+                    
+                    selectedRoleInput.value = diplomaId;
+                    modalTitle.textContent = titleText;
+                    
+                    form.reset();
+                    form.style.display = 'block';
+                    successScreen.classList.remove('show');
+                    
+                    modal.classList.add('show');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            const closeModal = () => {
+                modal.classList.remove('show');
+                document.body.style.overflow = '';
+            };
+            
+            closeBtn.addEventListener('click', closeModal);
+            successCloseBtn.addEventListener('click', closeModal);
+            
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const applicationData = {
+                    diploma: selectedRoleInput.value,
+                    name: document.getElementById('fullName').value,
+                    email: document.getElementById('emailAddress').value,
+                    phone: document.getElementById('phoneNumber').value,
+                    uni: document.getElementById('university').value,
+                    cv: document.getElementById('cvLink').value,
+                    timestamp: new Date().toISOString()
+                };
+                
+                console.log("Submitting Diploma Application:", applicationData);
+                
+                form.style.display = 'none';
+                successScreen.classList.add('show');
+            });
+        });
+    </script>
+
     <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
 </body>
 </html>
