@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Bootcamps - NextGen Institute</title>
     <meta name="description" content="View upcoming summer bootcamps in Data Analytics and AI/ML at NextGen Institute. Complete course schedule from July 1, 2026 to October 1, 2026.">
-        <link rel="stylesheet" href="styles.css?v=12">
+        <link rel="stylesheet" href="styles.css?v=13">
     <script>
         if (localStorage.getItem('selectedTheme') === 'dark') {
             document.documentElement.classList.add('dark-theme');
@@ -212,8 +212,8 @@
         </div>
     </footer>
 
-    <script src="main.js?v=12"></script>
-    <script src="lang.js?v=12"></script>
+    <script src="main.js?v=13"></script>
+    <script src="lang.js?v=13"></script>
 
     <!-- Registration Modal -->
     <div class="modal-overlay" id="registrationModal">
@@ -245,10 +245,7 @@
                     <input type="text" id="university" required placeholder="e.g. Cairo University, Computer Science">
                 </div>
 
-                <div class="form-group">
-                    <label for="cvLink" data-i18n="form_cv_label">Resume Link (Google Drive/Dropbox)</label>
-                    <input type="url" id="cvLink" required placeholder="https://drive.google.com/...">
-                </div>
+
                 
                 <button type="submit" class="btn btn-primary w-100" style="margin-top: 15px; width: 100%;" data-i18n="form_submit_btn">Submit Application</button>
             </form>
@@ -317,7 +314,7 @@
                     email: document.getElementById('emailAddress').value,
                     phone: document.getElementById('phoneNumber').value,
                     uni: document.getElementById('university').value,
-                    cv: document.getElementById('cvLink').value,
+
                     timestamp: new Date().toISOString()
                 };
                 
