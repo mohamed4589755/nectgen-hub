@@ -1487,8 +1487,8 @@ body.dark-theme, html.dark-theme {
     --accent-blue: #3b82f6;
     --accent-violet: #F5F5F7;
     --accent-cyan: #60a5fa;
-    --text-main: #ECECEF;
-    --text-muted: #8E919A;
+    --text-main: #FFFFFF;
+    --text-muted: #E5E7EB;
     --text-dark: #FFFFFF;
     --glass-bg: rgba(18, 18, 22, 0.85);
     --glass-border: rgba(255, 255, 255, 0.08);
@@ -1503,7 +1503,7 @@ body.dark-theme .logo-text-top {
     color: #FFFFFF !important;
 }
 body.dark-theme .logo-text-bottom {
-    color: #9CA3AF !important;
+    color: #E5E7EB !important;
 }
 
 /* Form input styling for dark theme */
@@ -1564,7 +1564,7 @@ body.dark-theme header.scrolled {
     background: rgba(10, 10, 12, 0.85) !important;
 }
 body.dark-theme .nav-link {
-    color: #A0A0A5 !important;
+    color: #D1D5DB !important;
 }
 body.dark-theme .nav-link:hover, body.dark-theme .nav-link.active {
     color: #FFFFFF !important;
