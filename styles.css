@@ -1870,3 +1870,55 @@ body.rtl .form-group {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 }
+
+/* --- CENTERED HERO REDESIGN --- */
+.hero-grid-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.hero-content-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+.hero-content-centered .hero-title {
+    font-size: 4.2rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.hero-content-centered .hero-subtitle {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    max-width: 680px;
+}
+
+.hero-content-centered .hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hero-content-centered .hero-title {
+        font-size: 2.5rem !important;
+        line-height: 1.15;
+    }
+    .hero-content-centered .hero-subtitle {
+        font-size: 1.1rem !important;
+        line-height: 1.4;
+        margin-bottom: 28px;
+    }
+}
