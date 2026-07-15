@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextGen Institute - Empowering Tech Creators in AI & Analytics</title>
     <meta name="description" content="NextGen Institute empowers the next generation of tech creators in AI, Machine Learning, and Data Analytics through hands-on bootcamps and premier internship opportunities.">
-        <link rel="stylesheet" href="styles.css?v=23">
+        <link rel="stylesheet" href="styles.css?v=24">
     <script>
         if (localStorage.getItem('selectedTheme') === 'dark') {
             document.documentElement.classList.add('dark-theme');
@@ -287,9 +287,80 @@
         </div>
     </footer>
 
-    <script src="main.js?v=23"></script>
-    <script src="lang.js?v=23"></script>
+    <script src="main.js?v=24"></script>
+    <script src="lang.js?v=24"></script>
     <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+    <!-- Explore Programs Modal -->
+    <div class="modal-overlay" id="exploreModal">
+        <div class="modal-content explore-modal-content">
+            <button class="modal-close" id="closeExploreModal">&times;</button>
+            <div class="explore-modal-header">
+                <h2 class="explore-modal-title" data-i18n="explore_modal_title">Explore Our Programs</h2>
+                <p class="explore-modal-sub" data-i18n="explore_modal_sub">Choose the path that matches your learning style and career goals.</p>
+            </div>
+            <div class="explore-grid">
+                <!-- Option 1: Internships -->
+                <a href="internships.html" class="explore-option-card">
+                    <div class="explore-option-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <div class="explore-option-info">
+                        <h3 class="explore-option-title" data-i18n="explore_card_intern_title">Internships</h3>
+                        <p class="explore-option-desc" data-i18n="explore_card_intern_desc">1-month corporate training with direct engineering mentorship.</p>
+                    </div>
+                    <div class="explore-option-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </div>
+                </a>
+                
+                <!-- Option 2: Bootcamps -->
+                <a href="bootcamps.html" class="explore-option-card">
+                    <div class="explore-option-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z"/>
+                            <path d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z"/>
+                            <path d="M12 9v12"/>
+                            <path d="M9 12h6"/>
+                        </svg>
+                    </div>
+                    <div class="explore-option-info">
+                        <h3 class="explore-option-title" data-i18n="explore_card_boot_title">Summer Bootcamps</h3>
+                        <p class="explore-option-desc" data-i18n="explore_card_boot_desc">Intensive 2-month practical coding bootcamps for fast skill acquisition.</p>
+                    </div>
+                    <div class="explore-option-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </div>
+                </a>
+                
+                <!-- Option 3: Diplomas -->
+                <a href="diplomas.html" class="explore-option-card">
+                    <div class="explore-option-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                        </svg>
+                    </div>
+                    <div class="explore-option-info">
+                        <h3 class="explore-option-title" data-i18n="explore_card_diploma_title">Professional Diplomas</h3>
+                        <p class="explore-option-desc" data-i18n="explore_card_diploma_desc">Comprehensive 5-month career tracks with guaranteed co-op internships.</p>
+                    </div>
+                    <div class="explore-option-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
 <!-- Trigger deployment 5 -->

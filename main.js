@@ -228,6 +228,44 @@ document.addEventListener('DOMContentLoaded', () => {
         </svg>
     `;
     document.body.appendChild(waBtn);
+
+    // --- Explore Programs Modal Controller ---
+    const exploreCta = document.getElementById('heroCtaPrimary');
+    const exploreModal = document.getElementById('exploreModal');
+    const closeExploreModal = document.getElementById('closeExploreModal');
+    
+    if (exploreCta && exploreModal) {
+        exploreCta.addEventListener('click', (e) => {
+            e.preventDefault(); // Stop normal redirection
+            exploreModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Disable background scrolling
+        });
+        
+        const closeModal = () => {
+            exploreModal.classList.remove('active');
+            document.body.style.overflow = ''; // Re-enable background scrolling
+        };
+        
+        if (closeExploreModal) {
+            closeExploreModal.addEventListener('click', closeModal);
+        }
+        
+        // Close on clicking outside the modal content
+        exploreModal.addEventListener('click', (e) => {
+            if (e.target === exploreModal) {
+                closeModal();
+            }
+        });
+        
+        // Close on clicking any card link to avoid locked scrolling on navigation
+        const exploreCards = exploreModal.querySelectorAll('.explore-option-card');
+        exploreCards.forEach(card => {
+            card.addEventListener('click', () => {
+                closeModal();
+            });
+        });
+    }
+
     // --- Dark Mode Switcher ---
     const initTheme = () => {
         const navMenu = document.getElementById('navMenu');

@@ -1922,3 +1922,132 @@ body.rtl .form-group {
         margin-bottom: 28px;
     }
 }
+
+/* --- EXPLORE MODAL SPECIAL CARDS --- */
+.explore-modal-content {
+    max-width: 600px !important;
+    padding: 40px 32px !important;
+}
+
+.explore-modal-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.explore-modal-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+}
+
+.explore-modal-sub {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.explore-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.explore-option-card {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    color: var(--text-main) !important;
+}
+
+.explore-option-card:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+body.dark-theme .explore-option-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    border-color: var(--accent-cyan);
+}
+
+.explore-option-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: rgba(14, 165, 233, 0.08);
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 16px;
+    transition: var(--transition-smooth);
+}
+
+body.rtl .explore-option-icon {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.explore-option-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.explore-option-card:hover .explore-option-icon {
+    background: var(--accent-blue);
+    color: #FFFFFF;
+}
+
+body.dark-theme .explore-option-icon {
+    background: rgba(96, 165, 250, 0.1);
+    color: var(--accent-cyan);
+}
+
+body.dark-theme .explore-option-card:hover .explore-option-icon {
+    background: var(--accent-cyan);
+    color: #0A0A0C !important;
+}
+
+.explore-option-info {
+    flex-grow: 1;
+}
+
+.explore-option-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.explore-option-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.35;
+}
+
+.explore-option-arrow {
+    color: var(--text-muted);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+body.rtl .explore-option-arrow {
+    transform: translateX(10px);
+}
+
+.explore-option-card:hover .explore-option-arrow {
+    opacity: 1;
+    color: var(--accent-blue);
+    transform: translateX(0);
+}
+
+body.dark-theme .explore-option-card:hover .explore-option-arrow {
+    color: var(--accent-cyan);
+}
