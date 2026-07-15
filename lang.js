@@ -9,7 +9,7 @@ const translations = {
         nav_contact: "Contact",
         
         // Footer
-        footer_desc: "Empowering creators, students, and engineers in data analytics and artificial intelligence. Shaping tomorrow, today.",
+        footer_desc: "Empowering creators, students, and engineers in data analytics, artificial intelligence, web development, and Flutter. Shaping tomorrow, today.",
         footer_links_title: "Quick Links",
         footer_connect_title: "Connect",
         footer_copyright: "&copy; 2026 NextGen Institute. All rights reserved.",
@@ -18,7 +18,7 @@ const translations = {
         // Index Page
         index_hero_tag: "Empower the Future",
         index_hero_title: "Empowering the Next Generation of <span class='gradient-text'>Tech Creators</span>",
-        index_hero_sub: "At NextGen Institute, we bridge the gap between academic theory and practical innovation. Join our immersive programs in AI, Machine Learning, and Data Analytics to shape the future of technology.",
+        index_hero_sub: "At NextGen Institute, we bridge the gap between academic theory and practical innovation. Join our immersive programs in AI, Machine Learning, Data Analytics, Web Development, and Flutter to shape the future of technology.",
         index_hero_cta_primary: "Explore Programs",
         index_tech_tag: "Core Technologies",
         index_tech_title: "Powering Our Curriculum",
@@ -283,7 +283,7 @@ const translations = {
         nav_contact: "اتصل بنا",
         
         // Footer
-        footer_desc: "تمكين المبتكرين والطلاب والمهندسين في مجالات تحليل البيانات والذكاء الاصطناعي. نشكّل المستقبل اليوم.",
+        footer_desc: "تمكين المبتكرين والطلاب والمهندسين في مجالات تحليل البيانات، الذكاء الاصطناعي، تطوير الويب، وفلاتر. نشكّل المستقبل اليوم.",
         footer_links_title: "روابط سريعة",
         footer_connect_title: "تواصل معنا",
         footer_copyright: "&copy; 2026 NextGen Institute. جميع الحقوق محفوظة.",
@@ -292,7 +292,7 @@ const translations = {
         // Index Page
         index_hero_tag: "تمكين المستقبل",
         index_hero_title: "تمكين الجيل القادم من <span class='gradient-text'>صُنّاع التكنولوجيا</span>",
-        index_hero_sub: "في NextGen Institute، نسد الفجوة بين النظريات الأكاديمية والابتكار العملي. انضم إلى برامجنا المكثفة في الذكاء الاصطناعي، تعلم الآلة، وتحليل البيانات لتشكيل مستقبل التكنولوجيا.",
+        index_hero_sub: "في NextGen Institute، نسد الفجوة بين النظريات الأكاديمية والابتكار العملي. انضم إلى برامجنا المكثفة في الذكاء الاصطناعي، تعلم الآلة، تحليل البيانات، تطوير الويب، وفلاتر لتشكيل مستقبل التكنولوجيا.",
         index_hero_cta_primary: "استكشف البرامج",
         index_tech_tag: "التقنيات الأساسية",
         index_tech_title: "قوة تكنولوجية تدعم مناهجنا",
