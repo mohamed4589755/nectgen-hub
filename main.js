@@ -237,12 +237,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (exploreCta && exploreModal) {
         exploreCta.addEventListener('click', (e) => {
             e.preventDefault(); // Stop normal redirection
-            exploreModal.classList.add('active');
+            exploreModal.classList.add('show');
             document.body.style.overflow = 'hidden'; // Disable background scrolling
         });
         
         const closeModal = () => {
-            exploreModal.classList.remove('active');
+            exploreModal.classList.remove('show');
             document.body.style.overflow = ''; // Re-enable background scrolling
         };
         
