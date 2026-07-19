@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Opportunities - NextGen Institute</title>
     <meta name="description" content="Explore current internship opportunities in AI, Machine Learning, and Data Analytics at NextGen Institute. Gain real-world project experience.">
-        <link rel="stylesheet" href="styles.css?v=32">
+        <link rel="stylesheet" href="styles.css?v=33">
     <script>
         if (localStorage.getItem('selectedTheme') === 'dark') {
             document.documentElement.classList.add('dark-theme');
@@ -234,8 +234,8 @@
         </div>
     </footer>
 
-    <script src="main.js?v=32"></script>
-    <script src="lang.js?v=32"></script>
+    <script src="main.js?v=33"></script>
+    <script src="lang.js?v=33"></script>
 
     <!-- Registration Modal -->
     <div class="modal-overlay" id="registrationModal">
@@ -362,7 +362,7 @@
                 submitBtn.textContent = "Submitting...";
                 
                 // We only submit to the Google Form if it is the Data Analytics track
-                if (trackName && trackName.toLowerCase().includes("data analytics")) {
+                if (trackName && trackName.toLowerCase().includes("data_analytics")) {
                     const formActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdCA-mxNAnhtxBgmf0PnZGKLWqX1e495YEDBvAWUsLetZRY_A/formResponse";
                     
                     // Create URLSearchParams to match Google Form format
