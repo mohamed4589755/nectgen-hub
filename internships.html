@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Opportunities - NextGen Institute</title>
     <meta name="description" content="Explore current internship opportunities in AI, Machine Learning, and Data Analytics at NextGen Institute. Gain real-world project experience.">
-        <link rel="stylesheet" href="styles.css?v=33">
+        <link rel="stylesheet" href="styles.css?v=34">
     <script>
         if (localStorage.getItem('selectedTheme') === 'dark') {
             document.documentElement.classList.add('dark-theme');
@@ -234,8 +234,8 @@
         </div>
     </footer>
 
-    <script src="main.js?v=33"></script>
-    <script src="lang.js?v=33"></script>
+    <script src="main.js?v=34"></script>
+    <script src="lang.js?v=34"></script>
 
     <!-- Registration Modal -->
     <div class="modal-overlay" id="registrationModal">
@@ -244,33 +244,36 @@
             <h3 class="modal-title" id="modalTitle">Register for Internship</h3>
             <p class="modal-subtitle" id="modalSubtitle" data-i18n="form_modal_sub">Please fill out the form below to apply.</p>
             
-            <form class="modal-form" id="internshipForm">
+            <form class="modal-form" id="internshipForm" method="POST">
                 <input type="hidden" id="selectedRole" name="role">
+                <input type="hidden" name="entry.2072862761" id="universityHidden">
+                <input type="hidden" name="entry.389164000" id="collegeHidden">
                 
                 <div class="form-group">
                     <label for="fullName" data-i18n="form_name_label">Full Name</label>
-                    <input type="text" id="fullName" required placeholder="Enter your full name">
+                    <input type="text" name="entry.1171089655" id="fullName" required placeholder="Enter your full name">
                 </div>
                 
                 <div class="form-group">
                     <label for="emailAddress" data-i18n="form_email_label">Email Address</label>
-                    <input type="email" id="emailAddress" required placeholder="Enter your email">
+                    <input type="email" name="entry.46744813" id="emailAddress" required placeholder="Enter your email">
                 </div>
                 
                 <div class="form-group">
                     <label for="phoneNumber" data-i18n="form_phone_label">Phone Number</label>
-                    <input type="tel" id="phoneNumber" required placeholder="Enter your phone number">
+                    <input type="tel" name="entry.1536865297" id="phoneNumber" required placeholder="Enter your phone number">
                 </div>
 
                 <div class="form-group">
-                    <label for="university" data-i18n="form_uni_label">University & College</label>
-                    <input type="text" id="university" required placeholder="e.g. Cairo University, Faculty of Engineering">
+                    <label for="universityInput" data-i18n="form_uni_label">University & College</label>
+                    <input type="text" id="universityInput" required placeholder="e.g. Cairo University, Faculty of Engineering">
                 </div>
 
-
-                
                 <button type="submit" class="btn btn-primary w-100" style="margin-top: 15px; width: 100%;" data-i18n="form_submit_btn">Submit Application</button>
             </form>
+            
+            <!-- Hidden iframe to handle Google Form submit natively without redirecting -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
             
             <!-- Success Message -->
             <div class="form-success" id="formSuccess">
@@ -333,77 +336,30 @@
             
             // Form submission logic
             form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
                 const trackName = selectedRoleInput.value;
-                const nameVal = document.getElementById('fullName').value;
-                const emailVal = document.getElementById('emailAddress').value;
-                const phoneVal = document.getElementById('phoneNumber').value;
-                const uniValue = document.getElementById('university').value;
+                const uniVal = document.getElementById('universityInput').value;
                 
-                // Split the university field by comma to separate University and College
-                const parts = uniValue.split(',');
-                const universityPart = parts[0] ? parts[0].trim() : uniValue;
-                const collegePart = parts[1] ? parts[1].trim() : "";
+                // Hide form and show success screen instantly
+                form.style.display = 'none';
+                successScreen.classList.add('show');
                 
-                console.log("Submitting Internship Application:", {
-                    track: trackName,
-                    name: nameVal,
-                    email: emailVal,
-                    phone: phoneVal,
-                    university: universityPart,
-                    college: collegePart
-                });
-                
-                // Visual feedback: disable button and show loading state
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const originalBtnText = submitBtn.textContent;
-                submitBtn.disabled = true;
-                submitBtn.textContent = "Submitting...";
-                
-                // We only submit to the Google Form if it is the Data Analytics track
+                // If it is the Data Analytics track, configure native POST submit to Google Forms
                 if (trackName && trackName.toLowerCase().includes("data_analytics")) {
-                    const formActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdCA-mxNAnhtxBgmf0PnZGKLWqX1e495YEDBvAWUsLetZRY_A/formResponse";
+                    // Split the university field by comma to separate University and College
+                    const parts = uniVal.split(',');
+                    document.getElementById('universityHidden').value = parts[0] ? parts[0].trim() : uniVal;
+                    document.getElementById('collegeHidden').value = parts[1] ? parts[1].trim() : "";
                     
-                    // Create URLSearchParams to match Google Form format
-                    const formData = new URLSearchParams();
-                    formData.append('entry.1171089655', nameVal);
-                    formData.append('entry.46744813', emailVal);
-                    formData.append('entry.1536865297', phoneVal);
-                    formData.append('entry.2072862761', universityPart);
-                    formData.append('entry.389164000', collegePart);
+                    form.action = "https://docs.google.com/forms/d/e/1FAIpQLSdCA-mxNAnhtxBgmf0PnZGKLWqX1e495YEDBvAWUsLetZRY_A/formResponse";
+                    form.target = "hidden_iframe";
                     
-                    fetch(formActionUrl, {
-                        method: 'POST',
-                        mode: 'no-cors', // Standard way to bypass CORS for Google Form submissions
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        body: formData
-                    })
-                    .then(() => {
-                        // Show success screen
-                        form.style.display = 'none';
-                        successScreen.classList.add('show');
-                    })
-                    .catch((error) => {
-                        console.error("Google Form submission error:", error);
-                        // Safe fallback: show success screen to student even if fetch fails
-                        form.style.display = 'none';
-                        successScreen.classList.add('show');
-                    })
-                    .finally(() => {
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = originalBtnText;
-                    });
+                    console.log("Submitting native Google Form for Data Analytics...");
                 } else {
-                    // For other tracks, simulate success locally for now
-                    setTimeout(() => {
-                        form.style.display = 'none';
-                        successScreen.classList.add('show');
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = originalBtnText;
-                    }, 600);
+                    // For other tracks, bypass Google Forms and handle purely locally
+                    e.preventDefault();
+                    form.action = "";
+                    form.target = "";
+                    console.log("Simulating local success for other track:", trackName);
                 }
             });
         });
