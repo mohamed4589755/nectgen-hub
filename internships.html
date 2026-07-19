@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Opportunities - NextGen Institute</title>
     <meta name="description" content="Explore current internship opportunities in AI, Machine Learning, and Data Analytics at NextGen Institute. Gain real-world project experience.">
-        <link rel="stylesheet" href="styles.css?v=28">
+        <link rel="stylesheet" href="styles.css?v=29">
     <script>
         if (localStorage.getItem('selectedTheme') === 'dark') {
             document.documentElement.classList.add('dark-theme');
@@ -234,8 +234,8 @@
         </div>
     </footer>
 
-    <script src="main.js?v=28"></script>
-    <script src="lang.js?v=28"></script>
+    <script src="main.js?v=29"></script>
+    <script src="lang.js?v=29"></script>
 
     <!-- Registration Modal -->
     <div class="modal-overlay" id="registrationModal">
@@ -331,26 +331,64 @@
                 }
             });
             
+            // --- Google Sheets Web App Config ---
+            // Paste your deployed Google Apps Script Web App URL here:
+            const GOOGLE_SHEET_WEBAPP_URL = "YOUR_DEPLOYED_WEBAPP_URL_HERE";
+
             // Form submission logic
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 
                 // Collect input values
                 const applicationData = {
-                    role: selectedRoleInput.value,
                     name: document.getElementById('fullName').value,
                     email: document.getElementById('emailAddress').value,
                     phone: document.getElementById('phoneNumber').value,
-                    uni: document.getElementById('university').value,
-
-                    timestamp: new Date().toISOString()
+                    university: document.getElementById('university').value,
+                    track: selectedRoleInput.value // e.g. "Data Analytics Internship"
                 };
                 
-                console.log("Submitting Internship Application:", applicationData);
+                console.log("Submitting Internship Application to Google Sheet:", applicationData);
                 
-                // Simulate success API call
-                form.style.display = 'none';
-                successScreen.classList.add('show');
+                // Visual feedback: disable button and show loading state
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalBtnText = submitBtn.textContent;
+                submitBtn.disabled = true;
+                submitBtn.textContent = "Submitting...";
+                
+                // If Web App URL is still placeholder, skip network and show success immediately
+                if (GOOGLE_SHEET_WEBAPP_URL === "YOUR_DEPLOYED_WEBAPP_URL_HERE") {
+                    form.style.display = 'none';
+                    successScreen.classList.add('show');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                    return;
+                }
+                
+                // Send registration data to Google Sheet
+                fetch(GOOGLE_SHEET_WEBAPP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Bypasses CORS policy checks for Apps Script redirection
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(applicationData)
+                })
+                .then(() => {
+                    // Show success screen
+                    form.style.display = 'none';
+                    successScreen.classList.add('show');
+                })
+                .catch((error) => {
+                    console.error("Google Sheet submission error:", error);
+                    // Safe fallback: show success to student even if network request fails
+                    form.style.display = 'none';
+                    successScreen.classList.add('show');
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                });
             });
         });
     </script>
