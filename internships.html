@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Opportunities - NextGen Institute</title>
     <meta name="description" content="Explore current internship opportunities in AI, Machine Learning, and Data Analytics at NextGen Institute. Gain real-world project experience.">
-        <link rel="stylesheet" href="styles.css?v=38">
+        <link rel="stylesheet" href="styles.css?v=39">
     <script>
         if (localStorage.getItem('selectedTheme') === 'dark') {
             document.documentElement.classList.add('dark-theme');
@@ -76,7 +76,7 @@
                         </p>
                         <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
                             <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="intern_duration_label">Duration:</span> <b data-i18n="intern_duration_1m">1 Month (Oct 1 - Nov 1)</b></span>
-                            <a href="contact.html?role=AI_ML" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole1" data-i18n="intern_apply_btn">Apply Now</a>
+                            <a href="https://forms.gle/13NrX2hcW3ue2Rgd9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole1" data-i18n="intern_apply_btn">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                         </p>
                         <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
                             <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="intern_duration_label">Duration:</span> <b data-i18n="intern_duration_1m">1 Month (Oct 1 - Nov 1)</b></span>
-                            <a href="contact.html?role=Data_Analytics" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole2" data-i18n="intern_apply_btn">Apply Now</a>
+                            <a href="https://forms.gle/13NrX2hcW3ue2Rgd9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole2" data-i18n="intern_apply_btn">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                         </p>
                         <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
                             <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="intern_duration_label">Duration:</span> <b data-i18n="intern_duration_1m">1 Month (Oct 1 - Nov 1)</b></span>
-                            <a href="contact.html?role=Flutter_Dev" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole3" data-i18n="intern_apply_btn">Apply Now</a>
+                            <a href="https://forms.gle/13NrX2hcW3ue2Rgd9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole3" data-i18n="intern_apply_btn">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                         </p>
                         <div class="card-footer" style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; width: 100%;">
                             <span style="font-size: 0.85rem; color: var(--text-muted);"><span data-i18n="intern_duration_label">Duration:</span> <b data-i18n="intern_duration_1m">1 Month (Oct 1 - Nov 1)</b></span>
-                            <a href="contact.html?role=Frontend_Dev" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole4" data-i18n="intern_apply_btn">Apply Now</a>
+                            <a href="https://forms.gle/13NrX2hcW3ue2Rgd9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;" id="applyRole4" data-i18n="intern_apply_btn">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -234,158 +234,10 @@
         </div>
     </footer>
 
-    <script src="main.js?v=38"></script>
-    <script src="lang.js?v=38"></script>
+    <script src="main.js?v=39"></script>
+    <script src="lang.js?v=39"></script>
 
-    <!-- Registration Modal -->
-    <div class="modal-overlay" id="registrationModal">
-        <div class="modal-content glass-panel">
-            <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
-            <h3 class="modal-title" id="modalTitle">Register for Internship</h3>
-            <p class="modal-subtitle" id="modalSubtitle" data-i18n="form_modal_sub">Please fill out the form below to apply.</p>
-            
-            <form class="modal-form" id="internshipForm">
-                <input type="hidden" id="selectedRole" name="role">
-                
-                <div class="form-group">
-                    <label for="fullName" data-i18n="form_name_label">Full Name</label>
-                    <input type="text" id="fullName" required placeholder="Enter your full name">
-                </div>
-                
-                <div class="form-group">
-                    <label for="emailAddress" data-i18n="form_email_label">Email Address</label>
-                    <input type="email" id="emailAddress" required placeholder="Enter your email">
-                </div>
-                
-                <div class="form-group">
-                    <label for="phoneNumber" data-i18n="form_phone_label">Phone Number</label>
-                    <input type="tel" id="phoneNumber" required placeholder="Enter your phone number">
-                </div>
 
-                <div class="form-group">
-                    <label for="university" data-i18n="form_uni_label">University & College</label>
-                    <input type="text" id="university" required placeholder="e.g. Cairo University, Faculty of Engineering">
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100" style="margin-top: 15px; width: 100%;" data-i18n="form_submit_btn">Submit Application</button>
-            </form>
-            
-            <!-- Success Message -->
-            <div class="form-success" id="formSuccess">
-                <svg class="success-icon" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--accent-blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 16px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <h4 data-i18n="form_success_title">Application Submitted!</h4>
-                <p data-i18n="form_success_desc">Thank you for applying. Our team will review your CV and contact you soon.</p>
-                <button class="btn btn-secondary" id="successCloseBtn" style="margin-top: 15px; padding: 8px 24px;" data-i18n="form_close_btn">Close</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const modal = document.getElementById('registrationModal');
-            const form = document.getElementById('internshipForm');
-            const successScreen = document.getElementById('formSuccess');
-            const closeBtn = document.getElementById('modalCloseBtn');
-            const successCloseBtn = document.getElementById('successCloseBtn');
-            const modalTitle = document.getElementById('modalTitle');
-            const selectedRoleInput = document.getElementById('selectedRole');
-            
-            // Active Google Sheets Web App Endpoint
-            const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzlz-6eCzexIEdjU-jy4FFuZ7_boVgnlCpFwq7HndFIjyknxuY2TLK6hsXgglY9FT0l/exec";
-            
-            // Open modal on Apply button click
-            document.querySelectorAll('[id^="applyRole"]').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    
-                    // Find card parent and title
-                    const card = btn.closest('.card');
-                    const titleText = card.querySelector('.card-title').textContent;
-                    const roleId = btn.getAttribute('href').split('role=')[1] || '';
-                    
-                    selectedRoleInput.value = roleId;
-                    modalTitle.textContent = titleText;
-                    
-                    // Reset Form and View
-                    form.reset();
-                    form.style.display = 'block';
-                    successScreen.classList.remove('show');
-                    
-                    // Open overlay
-                    modal.classList.add('show');
-                    document.body.style.overflow = 'hidden'; // Lock scrolling
-                });
-            });
-            
-            const closeModal = () => {
-                modal.classList.remove('show');
-                document.body.style.overflow = ''; // Unlock scrolling
-            };
-            
-            closeBtn.addEventListener('click', closeModal);
-            successCloseBtn.addEventListener('click', closeModal);
-            
-            // Close on overlay click
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-            
-            // Form submission logic
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                // Visual feedback: show loading state on button
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const originalBtnText = submitBtn.textContent;
-                submitBtn.disabled = true;
-                submitBtn.textContent = "Submitting...";
-                
-                // Collect input values
-                let trackName = selectedRoleInput.value;
-                if (trackName === 'AI_ML') trackName = 'AI & Machine Learning Internship';
-                if (trackName === 'Data_Analytics') trackName = 'Data Analytics Internship';
-                if (trackName === 'Flutter_Dev') trackName = 'Flutter Developer Internship';
-                if (trackName === 'Frontend_Dev') trackName = 'Front-End Web Developer Internship';
-
-                const applicationData = {
-                    name: document.getElementById('fullName').value,
-                    email: document.getElementById('emailAddress').value,
-                    phone: document.getElementById('phoneNumber').value,
-                    university: document.getElementById('university').value,
-                    track: trackName
-                };
-                
-                console.log("Submitting Internship Application to Google Sheet:", applicationData);
-                
-                // Send registration data to Google Sheets Web App
-                fetch(GOOGLE_SHEET_WEBAPP_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'text/plain'
-                    },
-                    body: JSON.stringify(applicationData)
-                })
-                .then(() => {
-                    // Show success screen
-                    form.style.display = 'none';
-                    successScreen.classList.add('show');
-                })
-                .catch((error) => {
-                    console.error("Google Sheet submission error:", error);
-                    // Safe fallback: show success screen to student even if network request fails
-                    form.style.display = 'none';
-                    successScreen.classList.add('show');
-                })
-                .finally(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = originalBtnText;
-                });
-            });
-        });
-    </script>
 
     <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
 </body>
