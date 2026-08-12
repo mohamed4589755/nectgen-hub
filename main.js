@@ -211,23 +211,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- WhatsApp Floating Button Injection ---
-    const whatsappNumber = "201206751361";
-    const whatsappText = "Hello NextGen Institute, I am interested in your programs!";
-    
-    const waBtn = document.createElement('a');
-    waBtn.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
-    waBtn.target = "_blank";
-    waBtn.className = "whatsapp-float";
-    waBtn.setAttribute('aria-label', 'Chat on WhatsApp');
-    waBtn.innerHTML = `
+    // --- LinkedIn Floating Button Injection ---
+    const linkedinBtn = document.createElement('a');
+    linkedinBtn.href = "https://www.linkedin.com/company/nextgen-institute/";
+    linkedinBtn.target = "_blank";
+    linkedinBtn.className = "linkedin-float";
+    linkedinBtn.setAttribute('aria-label', 'Visit LinkedIn Profile');
+    linkedinBtn.innerHTML = `
         <svg viewBox="0 0 24 24" width="60" height="60" style="filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.2));">
-            <circle cx="12" cy="12" r="11" fill="white"/>
-            <path fill="#25D366" d="M12.03 2c-5.52 0-10 4.48-10 10 0 1.78.47 3.5 1.35 5L2 22l5.12-1.34c1.46.8 3.12 1.22 4.82 1.22 5.52 0 10-4.48 10-10 0-5.52-4.48-10-10-10z"/>
-            <path fill="white" d="M17.98 16.18c-.27-.13-1.58-.78-1.82-.87-.24-.09-.42-.13-.6.13-.18.27-.7 1.13-.86 1.3-.16.18-.33.2-.6.07-.27-.13-1.15-.43-2.2-1.36-.81-.72-1.36-1.62-1.52-1.9-.16-.27-.02-.42.12-.55.12-.13.27-.3.4-.46.13-.16.18-.28.27-.46.09-.18.04-.34-.02-.47-.07-.13-.6-1.44-.82-1.97-.22-.53-.48-.46-.6-.46-.12 0-.27-.02-.42-.02-.15 0-.39.06-.6.28-.21.22-.8.78-.8 1.9s.82 2.2 1.04 2.5c.22.3 1.62 2.48 3.93 3.48.55.24.98.38 1.32.49.56.18 1.07.15 1.47.09.45-.07 1.38-.56 1.57-1.1.2-.55.2-1.02.14-1.13-.06-.11-.24-.17-.51-.3z"/>
+            <circle cx="12" cy="12" r="11" fill="#0077B5"/>
+            <path fill="white" d="M7.5 17H5V9h2.5v8zM6.2 8a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zm11.3 9H15v-4.1c0-1-.8-1.8-1.8-1.8s-1.8.8-1.8 1.8V17H9V9h2.4v1.1c.4-.7 1.2-1.2 2.3-1.2 2.2 0 3.8 1.6 3.8 3.8V17z"/>
         </svg>
     `;
-    document.body.appendChild(waBtn);
+    document.body.appendChild(linkedinBtn);
 
     // --- Explore Programs Modal Controller ---
     const exploreCta = document.getElementById('heroCtaPrimary');

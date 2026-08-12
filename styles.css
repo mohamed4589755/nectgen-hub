@@ -1154,8 +1154,8 @@ body.rtl .slide-btn {
     /* Flip buttons visually or swap positioning for better feel */
 }
 
-/* --- WHATSAPP FLOATING BUTTON --- */
-.whatsapp-float {
+/* --- LINKEDIN FLOATING BUTTON --- */
+.linkedin-float {
     position: fixed;
     bottom: 24px;
     right: 24px;
@@ -1170,12 +1170,12 @@ body.rtl .slide-btn {
     border: none;
 }
 
-.whatsapp-float:hover {
+.linkedin-float:hover {
     transform: scale(1.08) translateY(-3px);
 }
 
-/* Flip WhatsApp button position for Arabic RTL layouts */
-body.rtl .whatsapp-float {
+/* Flip LinkedIn button position for Arabic RTL layouts */
+body.rtl .linkedin-float {
     right: auto !important;
     left: 24px !important;
 }
