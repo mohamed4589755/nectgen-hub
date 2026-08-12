@@ -160,7 +160,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background: #0077ED;
+    background: #1256be;
     transform: scale(1.02);
     text-decoration: none;
 }
@@ -172,7 +172,7 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    background: rgba(0, 113, 227, 0.05);
+    background: rgba(22, 99, 217, 0.05);
     transform: scale(1.02);
     text-decoration: none;
 }
@@ -540,7 +540,7 @@ header.scrolled {
 }
 
 .tag-highlight {
-    background: rgba(0, 113, 227, 0.1);
+    background: rgba(22, 99, 217, 0.1);
     color: var(--accent-blue);
 }
 
@@ -611,7 +611,7 @@ header.scrolled {
 }
 
 .status-open {
-    background: rgba(0, 113, 227, 0.1);
+    background: rgba(22, 99, 217, 0.1);
     color: var(--accent-blue);
 }
 
@@ -779,7 +779,7 @@ header.scrolled {
 .form-control:focus {
     outline: none;
     border-color: var(--accent-blue);
-    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15); /* Apple blue ring focus */
+    box-shadow: 0 0 0 4px rgba(22, 99, 217, 0.15); /* Apple blue ring focus */
 }
 
 textarea.form-control {
