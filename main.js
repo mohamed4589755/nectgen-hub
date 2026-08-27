@@ -210,19 +210,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- LinkedIn Floating Button Injection ---
-    const linkedinBtn = document.createElement('a');
-    linkedinBtn.href = "https://www.linkedin.com/company/nextgen-institute/";
-    linkedinBtn.target = "_blank";
-    linkedinBtn.className = "linkedin-float";
-    linkedinBtn.setAttribute('aria-label', 'Visit LinkedIn Profile');
-    linkedinBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" width="60" height="60" style="filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.2));">
-            <circle cx="12" cy="12" r="11" fill="#0077B5"/>
-            <path fill="white" d="M7.5 17H5V9h2.5v8zM6.2 8a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zm11.3 9H15v-4.1c0-1-.8-1.8-1.8-1.8s-1.8.8-1.8 1.8V17H9V9h2.4v1.1c.4-.7 1.2-1.2 2.3-1.2 2.2 0 3.8 1.6 3.8 3.8V17z"/>
-        </svg>
-    `;
-    document.body.appendChild(linkedinBtn);
 
     // --- Explore Programs Modal Controller ---
     const exploreCta = document.getElementById('heroCtaPrimary');
