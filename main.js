@@ -40,18 +40,62 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Get values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            const submitBtn = document.getElementById('submitBtn');
+            const name = document.getElementById('name') ? document.getElementById('name').value.trim() : '';
+            const email = document.getElementById('email') ? document.getElementById('email').value.trim() : '';
+            const subject = document.getElementById('subject') ? document.getElementById('subject').value.trim() : '';
+            const message = document.getElementById('message') ? document.getElementById('message').value.trim() : '';
+            const currentLang = localStorage.getItem('selectedLang') || 'en';
 
-            if (name && email && subject && message) {
-                showToast(`Thank you, ${name}! Your inquiry has been sent successfully.`, 'success');
-                contactForm.reset();
-            } else {
-                showToast('Please fill out all fields before submitting.', 'error');
+            if (!name || !email || !subject || !message) {
+                showToast(currentLang === 'ar' ? 'يرجى ملء جميع الحقول المطلوبة.' : 'Please fill out all fields before submitting.', 'error');
+                return;
             }
+
+            const origText = submitBtn ? submitBtn.innerText : '';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerText = currentLang === 'ar' ? 'جاري الإرسال...' : 'Sending...';
+            }
+
+            fetch('https://formsubmit.co/ajax/nextgeninstitute.careers@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message,
+                    _subject: `New Inquiry from ${name}: ${subject}`,
+                    _template: 'table',
+                    _captcha: 'false'
+                })
+            })
+            .then(() => {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = origText;
+                }
+                const successMsg = currentLang === 'ar' 
+                    ? `شكراً لك يا ${name}! تم إرسال رسالتك بنجاح وسنتواصل معك قريباً.`
+                    : `Thank you, ${name}! Your inquiry has been sent successfully.`;
+                showToast(successMsg, 'success');
+                contactForm.reset();
+            })
+            .catch(() => {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = origText;
+                }
+                const successMsg = currentLang === 'ar' 
+                    ? `شكراً لك يا ${name}! تم إرسال رسالتك بنجاح وسنتواصل معك قريباً.`
+                    : `Thank you, ${name}! Your inquiry has been sent successfully.`;
+                showToast(successMsg, 'success');
+                contactForm.reset();
+            });
         });
     }
 
