@@ -158,7 +158,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let autoSlideInterval;
         
         const updateSlidePosition = () => {
-            slideTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            const isRtl = document.body.classList.contains('rtl');
+            const directionMultiplier = isRtl ? 1 : -1;
+            slideTrack.style.transform = `translateX(${directionMultiplier * currentSlide * 100}%)`;
             
             // Update active dot
             dots.forEach((dot, index) => {
