@@ -14,6 +14,7 @@ const translations = {
         footer_connect_title: "Connect",
         footer_copyright: "&copy; 2026 NextGen Institute. All rights reserved.",
         footer_design: "Learn • Practice • Build • Grow",
+        tag_certified: "Certified",
         
         // Index Page
         index_hero_tag: "Empower the Future",
@@ -306,6 +307,7 @@ const translations = {
         footer_connect_title: "تواصل معنا",
         footer_copyright: "&copy; 2026 NextGen Institute. جميع الحقوق محفوظة.",
         footer_design: "تعلم • تدرب • ابني • انمو",
+        tag_certified: "شهادة معتمدة",
         
         // Index Page
         index_hero_tag: "تمكين المستقبل",
