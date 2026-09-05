@@ -269,15 +269,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Explore Programs Modal Controller ---
     const exploreCta = document.getElementById('heroCtaPrimary');
+    const ctaFooter = document.getElementById('ctaFooter');
     const exploreModal = document.getElementById('exploreModal');
     const closeExploreModal = document.getElementById('closeExploreModal');
     
-    if (exploreCta && exploreModal) {
-        exploreCta.addEventListener('click', (e) => {
+    if (exploreModal) {
+        const openModal = (e) => {
             e.preventDefault(); // Stop normal redirection
             exploreModal.classList.add('show');
             document.body.style.overflow = 'hidden'; // Disable background scrolling
-        });
+        };
+
+        if (exploreCta) {
+            exploreCta.addEventListener('click', openModal);
+        }
+
+        if (ctaFooter) {
+            ctaFooter.addEventListener('click', openModal);
+        }
         
         const closeModal = () => {
             exploreModal.classList.remove('show');
