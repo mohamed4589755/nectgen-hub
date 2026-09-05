@@ -172,7 +172,7 @@ const translations = {
         diploma_role4_title: "Front-End Web Developer Diploma",
         diploma_role4_desc: "Master modern UI engineering. Build fully responsive portals using semantic HTML5, advanced CSS, flexbox/grid layout design, JavaScript DOM bindings, and React frameworks.",
         diploma_duration_label: "Duration:",
-        diploma_duration_5m: "4 Months",
+        diploma_duration_5m: "5 Months",
         diploma_cost_label: "Cost:",
         diploma_cost_ai: "6000 EGP",
         diploma_cost_da: "5500 EGP",
@@ -225,7 +225,7 @@ const translations = {
         // Diplomas Page
         diploma_tag: "Long-Term Specialization",
         diploma_title: "Professional <span class='gradient-text'>Diplomas</span>",
-        diploma_sub: "Comprehensive 4-month programs built to take you from absolute foundations to job-ready expertise with direct placement opportunities.",
+        diploma_sub: "Comprehensive 5-month programs built to take you from absolute foundations to job-ready expertise with direct placement opportunities.",
         diploma_list_title: "Available Specialization Tracks",
         diploma_list_sub: "Choose a professional track. Each diploma includes weekly coding labs, live case studies, and a final capstone reviewed by industry experts.",
         diploma_d1_title: "Advanced AI & Deep Learning Diploma",
@@ -513,7 +513,7 @@ const translations = {
         // Diplomas Page
         diploma_tag: "التخصص طويل المدى",
         diploma_title: "الدبلومات <span class='gradient-text'>المهنية</span>",
-        diploma_sub: "برامج شاملة مدتها ٤ أشهر مصممة لتأخذك من الأساسيات الصفرية إلى الخبرة الجاهزة للعمل مع فرص تدريب مباشر.",
+        diploma_sub: "برامج شاملة مدتها ٥ أشهر مصممة لتأخذك من الأساسيات الصفرية إلى الخبرة الجاهزة للعمل مع فرص تدريب مباشر.",
         diploma_list_title: "مسارات التخصص المتاحة",
         diploma_list_sub: "اختر مسارك المهني. تتضمن كل دبلومة مختبرات برمجية أسبوعية، دراسات حالة مباشرة، ومشروع تخرج فني يخضع لمراجعة الخبراء.",
         diploma_d1_title: "دبلومة الذكاء الاصطناعي المتقدم والتعلم العميق",
