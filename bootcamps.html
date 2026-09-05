@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Bootcamps - NextGen Institute</title>
     <meta name="description" content="View upcoming summer bootcamps in Data Analytics and AI/ML at NextGen Institute. Complete course schedule from July 1, 2026 to October 1, 2026.">
-        <link rel="stylesheet" href="styles.css?v=79">
+        <link rel="stylesheet" href="styles.css?v=80">
 
 </head>
 <body>
@@ -58,7 +58,7 @@
                 <!-- Card 1: AI & ML Bootcamp -->
                 <div class="card glass-panel" id="bootCard1" style="padding: 0; overflow: hidden;">
                     <div class="card-image-wrap">
-                        <img src="assets/bootcamp_ai_ml.png?v=79" alt="AI & Machine Learning Bootcamp">
+                        <img src="assets/bootcamp_ai_ml.png?v=80" alt="AI & Machine Learning Bootcamp">
                     </div>
                     <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
                         <div class="card-tags">
@@ -80,7 +80,7 @@
                 <!-- Card 2: Data Analytics Bootcamp -->
                 <div class="card glass-panel" id="bootCard2" style="padding: 0; overflow: hidden;">
                     <div class="card-image-wrap">
-                        <img src="assets/bootcamp_data_analytics.png?v=79" alt="Data Analytics Bootcamp">
+                        <img src="assets/bootcamp_data_analytics.png?v=80" alt="Data Analytics Bootcamp">
                     </div>
                     <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
                         <div class="card-tags">
@@ -102,7 +102,7 @@
                 <!-- Card 3: Flutter Developer Bootcamp -->
                 <div class="card glass-panel" id="bootCard3" style="padding: 0; overflow: hidden;">
                     <div class="card-image-wrap">
-                        <img src="assets/bootcamp_flutter.png?v=79" alt="Flutter Developer Bootcamp">
+                        <img src="assets/bootcamp_flutter.png?v=80" alt="Flutter Developer Bootcamp">
                     </div>
                     <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
                         <div class="card-tags">
@@ -124,7 +124,7 @@
                 <!-- Card 4: Front-End Web Developer Bootcamp -->
                 <div class="card glass-panel" id="bootCard4" style="padding: 0; overflow: hidden;">
                     <div class="card-image-wrap">
-                        <img src="assets/bootcamp_frontend.png?v=79" alt="Front-End Web Developer Bootcamp">
+                        <img src="assets/bootcamp_frontend.png?v=80" alt="Front-End Web Developer Bootcamp">
                     </div>
                     <div class="card-body" style="padding: 28px 24px; display: flex; flex-direction: column; flex-grow: 1;">
                         <div class="card-tags">
@@ -147,7 +147,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="fade-up section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
+    <section class="fade-up section-padding" style="background: var(--bg-primary);">
         <div class="container">
             <div class="section-title-wrap text-center">
                 <span class="section-tag" data-i18n="boot_faq_tag">Common Queries</span>
@@ -155,16 +155,105 @@
                 <p class="section-subtitle" data-i18n="boot_faq_sub">Need more details? Here are answers to common questions about our bootcamps.</p>
             </div>
 
-            <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));">
-                <!-- FAQ 1 -->
-                <div class="card glass-panel" style="padding: 30px;" id="faqCard1">
-                    <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-cyan);" data-i18n="boot_faq1_q">What are the prerequisites for the AI/ML track?</h3>
-                    <p class="card-desc" style="font-size: 0.9rem;" data-i18n="boot_faq1_a">Basic Python familiarity and high-school-level math are recommended. We provide pre-course self-study materials two weeks before July 1st to bring you up to speed.</p>
+            <div class="faq-accordion" id="faqAccordionBootcamps">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq1_q">What bootcamps do you offer?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq1_a">We offer intensive bootcamps focused on practical, industry-relevant skills in areas such as Data Analytics and AI & Machine Learning.</div>
+                    </div>
                 </div>
-                <!-- FAQ 2 -->
-                <div class="card glass-panel" style="padding: 30px;" id="faqCard2">
-                    <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-violet);" data-i18n="boot_faq2_q">Is there a certificate provided upon graduation?</h3>
-                    <p class="card-desc" style="font-size: 0.9rem;" data-i18n="boot_faq2_a">Yes. All graduates who successfully complete their capstone project and pass the final review will receive an authenticated digital Certificate of Completion.</p>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq2_q">How long is each bootcamp?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq2_a">The duration depends on the specific bootcamp and its curriculum.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq3_q">Are the bootcamps online or offline?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq3_a">Our bootcamps are delivered online, allowing you to learn from anywhere.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq4_q">Do I need prior experience?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq4_a">No. Our bootcamps are designed to accommodate beginners while also helping learners with existing knowledge strengthen their skills.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq5_q">What will I learn?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq5_a">You will learn practical tools, technologies, and workflows used in the industry.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq6_q">Will I work on real projects?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq6_a">Yes. Practical projects are an essential part of our bootcamps and help you build a portfolio.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq7_q">Do I receive a certificate?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq7_a">Yes. Participants who successfully complete the bootcamp receive a certificate of completion.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq8_q">Is there instructor and mentor support?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq8_a">Yes. You will receive guidance and support throughout the bootcamp.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq9_q">Can I pay in installments?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq9_a">Yes. Installment options are available.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="boot_faq10_q">How can I register?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="boot_faq10_a">Select the bootcamp you are interested in and click "Register Now" to start your registration.</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -212,8 +301,8 @@
         </div>
     </footer>
 
-    <script src="main.js?v=79"></script>
-    <script src="lang.js?v=79"></script>
+    <script src="main.js?v=80"></script>
+    <script src="lang.js?v=80"></script>
 
     <!-- Registration Modal -->
     <div class="modal-overlay" id="registrationModal">
