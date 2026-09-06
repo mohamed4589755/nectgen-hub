@@ -1,0 +1,24 @@
+import glob
+
+for filepath in glob.glob("*.html"):
+    with open(filepath, "r", encoding="utf-8") as f:
+        html = f.read()
+    
+    # Bump from v=72 to v=73
+    html = html.replace("styles.css?v=72", "styles.css?v=73")
+    html = html.replace("lang.js?v=72", "lang.js?v=73")
+    html = html.replace("main.js?v=72", "main.js?v=73")
+    html = html.replace("assets/hero_bg.jpg?v=72", "assets/hero_bg.jpg?v=73")
+    html = html.replace("bootcamp_data_analytics.png?v=72", "bootcamp_data_analytics.png?v=73")
+    html = html.replace("bootcamp_ai_ml.png?v=72", "bootcamp_ai_ml.png?v=73")
+    html = html.replace("bootcamp_flutter.png?v=72", "bootcamp_flutter.png?v=73")
+    html = html.replace("bootcamp_frontend.png?v=72", "bootcamp_frontend.png?v=73")
+    html = html.replace("diploma_frontend.png?v=72", "diploma_frontend.png?v=73")
+    html = html.replace("diploma_flutter.png?v=72", "diploma_flutter.png?v=73")
+    html = html.replace("diploma_data_analytics.png?v=72", "diploma_data_analytics.png?v=73")
+    html = html.replace("diploma_ai_ml.png?v=72", "diploma_ai_ml.png?v=73")
+    
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(html)
+
+print("Cache version bumped to v=73 in all HTML files successfully!")
