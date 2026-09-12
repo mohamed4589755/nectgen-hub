@@ -74,9 +74,9 @@ const translations = {
         // Internships Page
         intern_tag: "Career Acceleration",
         intern_title: "Internship <span class='gradient-text'>Opportunities</span>",
-        intern_sub: "Real tasks, real systems, and actual mentorship. Gain production-level experience that makes you stand out to global recruiters.",
+        intern_sub: "100% Free Internships, Summer Trainings & Winter Trainings with real tasks, live production systems, and expert mentorship.",
         intern_list_title: "Open Roles",
-        intern_list_sub: "Select a track matching your career aspirations. We accept candidates for our Summer and Autumn cohorts.",
+        intern_list_sub: "Select a track matching your career. We offer Free Summer Internships, Summer Trainings, Winter Internships & Winter Trainings.",
         intern_role1_tag1: "AI & ML",
         intern_role1_tag2: "Remote",
         intern_role1_tag3: "Free",
@@ -421,9 +421,9 @@ const translations = {
         // Internships Page
         intern_tag: "تسريع المسار المهني",
         intern_title: "فرص <span class='gradient-text'>التدريب العملي</span>",
-        intern_sub: "مهام حقيقية، أنظمة إنتاجية واقعية، وتوجيه إرشادي فعلي. اكتسب خبرة عملية تبرزك أمام مسؤولي التوظيف العالميين.",
+        intern_sub: "تدريبات عملية مجانية 100%، تدريبات صيفية وشتوية بمهام حقيقية، أنظمة إنتاجية واقعية، وتوجيه إرشادي متخصص.",
         intern_list_title: "الوظائف المتاحة",
-        intern_list_sub: "اختر المسار الذي يتوافق مع تطلعاتك المهنية. نحن نقبل المرشحين لمجموعات الصيف والخريف.",
+        intern_list_sub: "اختر المسار الذي يتوافق مع تطلعاتك المهنية. نقدم فرص تدريب مجانية (Free Internships)، تدريبات صيفية (Summer Trainings)، وتدريبات شتوية (Winter Trainings & Internships).",
         intern_role1_tag1: "الذكاء الاصطناعي وتعلم الآلة",
         intern_role1_tag2: "عن بعد",
         intern_role1_tag3: "مجاني",
