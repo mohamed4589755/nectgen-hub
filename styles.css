@@ -971,6 +971,10 @@ footer {
     justify-content: center;
     gap: 6px;
     margin-top: 24px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dot {
