@@ -875,10 +875,10 @@ footer {
 /* --- SLIDESHOW / CAROUSEL (Apple Clean Review Style) --- */
 .slideshow-container {
     position: relative;
-    max-width: 800px;
-    margin: 40px auto 0;
+    max-width: 680px;
+    margin: 30px auto 0;
     overflow: hidden;
-    padding: 60px 50px 40px;
+    padding: 40px 45px 28px;
     border-radius: var(--radius-md);
     background: var(--bg-secondary);
     box-shadow: none;
@@ -899,7 +899,7 @@ footer {
 }
 
 .slide-content {
-    max-width: 620px;
+    max-width: 540px;
     text-align: left;
     padding: 0 10px;
 }
@@ -909,16 +909,16 @@ footer {
 }
 
 .slide-quote {
-    font-size: 1.4rem; /* Big readable quote font */
+    font-size: 1.18rem; /* Compact readable quote font */
     font-weight: 500;
     color: var(--text-main);
-    margin-bottom: 24px;
-    line-height: 1.4;
+    margin-bottom: 18px;
+    line-height: 1.45;
     letter-spacing: -0.015em;
 }
 
 .slide-author {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--text-main);
     margin-bottom: 2px;
@@ -1075,13 +1075,13 @@ footer {
 
     /* Slideshow Mobile Overrides */
     .slideshow-container {
-        padding: 40px 16px 30px !important;
+        padding: 30px 16px 22px !important;
         margin-top: 20px;
     }
 
     .slide-quote {
-        font-size: 1.1rem !important;
-        margin-bottom: 16px;
+        font-size: 1.05rem !important;
+        margin-bottom: 14px;
     }
 
     .slide-btn {
