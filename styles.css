@@ -875,10 +875,10 @@ footer {
 /* --- SLIDESHOW / CAROUSEL (Apple Clean Review Style) --- */
 .slideshow-container {
     position: relative;
-    max-width: 680px;
-    margin: 30px auto 0;
+    max-width: 580px;
+    margin: 24px auto 0;
     overflow: hidden;
-    padding: 40px 45px 28px;
+    padding: 30px 40px 22px;
     border-radius: var(--radius-md);
     background: var(--bg-secondary);
     box-shadow: none;
@@ -899,9 +899,9 @@ footer {
 }
 
 .slide-content {
-    max-width: 540px;
+    max-width: 460px;
     text-align: left;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .quote-icon {
@@ -909,23 +909,23 @@ footer {
 }
 
 .slide-quote {
-    font-size: 1.18rem; /* Compact readable quote font */
+    font-size: 1.05rem; /* Compact readable quote font */
     font-weight: 500;
     color: var(--text-main);
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     line-height: 1.45;
     letter-spacing: -0.015em;
 }
 
 .slide-author {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-main);
     margin-bottom: 2px;
 }
 
 .slide-role {
-    font-size: 0.8rem;
+    font-size: 0.76rem;
     color: var(--text-muted);
     text-transform: none;
     letter-spacing: 0;
@@ -938,13 +938,13 @@ footer {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     color: var(--text-main);
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: var(--transition-smooth);
     z-index: 10;
@@ -959,18 +959,18 @@ footer {
 }
 
 .prev-btn {
-    left: 10px;
+    left: 8px;
 }
 
 .next-btn {
-    right: 10px;
+    right: 8px;
 }
 
 .slideshow-dots {
     display: flex;
     justify-content: center;
-    gap: 6px;
-    margin-top: 24px;
+    gap: 5px;
+    margin-top: 16px;
     flex-wrap: wrap;
     max-width: 90%;
     margin-left: auto;
@@ -1075,13 +1075,13 @@ footer {
 
     /* Slideshow Mobile Overrides */
     .slideshow-container {
-        padding: 30px 16px 22px !important;
-        margin-top: 20px;
+        padding: 22px 14px 16px !important;
+        margin-top: 16px;
     }
 
     .slide-quote {
-        font-size: 1.05rem !important;
-        margin-bottom: 14px;
+        font-size: 0.95rem !important;
+        margin-bottom: 10px;
     }
 
     .slide-btn {
