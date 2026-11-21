@@ -295,7 +295,8 @@ const translations = {
         bda_hero_title: "Data Analytics <span class='gradient-text'>Bootcamp</span>",
         bda_hero_sub: "Pick your track. Build real skills. Transform from raw spreadsheets to end-to-end data pipelines, modern SQL queries, Python automation, and executive Tableau dashboards.",
         bda_price_val: "3,800 EGP",
-        bda_whatsapp_btn: "Register via WhatsApp",
+        bda_whatsapp_btn: "Book Your Seat",
+        bda_book_btn: "Book Your Seat",
         bda_curriculum_tag: "Comprehensive Syllabus",
         bda_curriculum_title: "What You Will Learn",
         bda_curriculum_sub: "80 hours of live interactive sessions and hands-on laboratory exercises divided into 5 structured pillars.",
@@ -335,7 +336,7 @@ const translations = {
         bda_mod5_t3: "Live Presentation & Technical Evaluation",
         bda_mod5_t4: "Verified NextGen Certificate of Completion",
         bda_cta_title: "Ready to Kickstart Data Analytics in Winter 2027?",
-        bda_cta_desc: "Limited seats available for university students with 50% discount (3,800 EGP). Connect directly with our academic advisor on WhatsApp to register and secure your spot.",
+        bda_cta_desc: "Limited seats available for university students with 50% discount (3,800 EGP). Reserve your seat now to join the upcoming winter cohort.",
 
         // AI & Machine Learning Detail Page
         baiml_meta_title: "AI & Machine Learning Winter Bootcamp 2027 | NextGen Institute",
@@ -343,7 +344,8 @@ const translations = {
         baiml_hero_title: "AI & Machine Learning <span class='gradient-text'>Bootcamp</span>",
         baiml_hero_sub: "Pick your track. Build real skills. Dive deep into mathematical modeling, Python object-oriented programming, modern machine learning algorithms, deep neural architectures, and intelligent production models.",
         baiml_price_val: "3,800 EGP",
-        baiml_whatsapp_btn: "Register via WhatsApp",
+        baiml_whatsapp_btn: "Book Your Seat",
+        baiml_book_btn: "Book Your Seat",
         baiml_curriculum_tag: "Comprehensive Syllabus",
         baiml_curriculum_title: "What You Will Learn",
         baiml_curriculum_sub: "80 hours of live interactive sessions, hands-on algorithm implementations, and real neural network training.",
@@ -383,7 +385,7 @@ const translations = {
         baiml_mod5_t3: "Code Architecture & Mentor Evaluation",
         baiml_mod5_t4: "Verified NextGen Certificate of Completion",
         baiml_cta_title: "Ready to Master AI & Machine Learning in Winter 2027?",
-        baiml_cta_desc: "Limited seats available for university students with 50% discount (3,800 EGP). Connect directly with our academic advisor on WhatsApp to register and secure your spot.",
+        baiml_cta_desc: "Limited seats available for university students with 50% discount (3,800 EGP). Reserve your seat now to join the upcoming winter cohort.",
 
         diploma_grid_title: "Available Specialization Tracks",
         diploma_grid_sub: "Choose a professional track. Each diploma includes weekly coding labs, live case studies, and a final capstone reviewed by industry experts.",
@@ -897,7 +899,7 @@ const translations = {
         bda_mod5_t3: "عرض تقديمي مباشر ومناقشة فنية مع الخبراء",
         bda_mod5_t4: "الحصول على شهادة إتمام معتمدة من NextGen Institute",
         bda_cta_title: "جاهز لبدء رحلتك في تحليل البيانات لشتاء ٢٠٢٧؟",
-        bda_cta_desc: "الأماكن محدودة لطلاب الجامعات بخصم ٥٠٪ (٣,٨٠٠ ج.م فقط). تواصل مباشرة مع مستشارنا الأكاديمي عبر الواتساب لتأكيد تسجيلك وحجز مقعدك.",
+        bda_cta_desc: "الأماكن محدودة لطلاب الجامعات بخصم ٥٠٪ (٣,٨٠٠ ج.م فقط). احجز مقعدك الآن للانضمام إلى المعسكر الشتوي القادم.",
 
         // AI & Machine Learning Detail Page (Arabic)
         baiml_meta_title: "معسكر الذكاء الاصطناعي وتعلم الآلة شتاء ٢٠٢٧ | معهد نكست جين",
@@ -945,7 +947,7 @@ const translations = {
         baiml_mod5_t3: "تقييم معماري وهندسي متقدم للكود من كبار الموجهين",
         baiml_mod5_t4: "الحصول على شهادة إتمام معتمدة من NextGen Institute",
         baiml_cta_title: "جاهز لاحتراف الذكاء الاصطناعي في شتاء ٢٠٢٧؟",
-        baiml_cta_desc: "الأماكن محدودة لطلاب الجامعات بخصم ٥٠٪ (٣,٨٠٠ ج.م فقط). تواصل مباشرة مع مستشارنا الأكاديمي عبر الواتساب لتأكيد تسجيلك وحجز مقعدك.",
+        baiml_cta_desc: "الأماكن محدودة لطلاب الجامعات بخصم ٥٠٪ (٣,٨٠٠ ج.م فقط). احجز مقعدك الآن للانضمام إلى المعسكر الشتوي القادم.",
 
         diploma_grid_title: "مسارات التخصص المتاحة",
         diploma_grid_sub: "اختر مسارًا مهنيًا. تتضمن كل دبلومة مختبرات برمجية أسبوعية، ودراسات حالة حية، ومراجعة لمشروع تخرجك النهائي من قبل خبراء الصناعة.",

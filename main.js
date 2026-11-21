@@ -3,6 +3,22 @@ localStorage.setItem('selectedTheme', 'light');
 document.documentElement.classList.remove('dark-theme');
 document.body.classList.remove('dark-theme');
 document.addEventListener('DOMContentLoaded', () => {
+    // Pre-fill contact form from URL params
+    const urlParams = new URLSearchParams(window.location.search);
+    const inquiryParam = urlParams.get('inquiry');
+    if (inquiryParam) {
+        const subjectField = document.getElementById('subject');
+        if (subjectField) {
+            if (inquiryParam.includes('Data_Analytics')) {
+                subjectField.value = 'Winter Bootcamp 2027: Data Analytics Track Registration';
+            } else if (inquiryParam.includes('AI_Machine_Learning')) {
+                subjectField.value = 'Winter Bootcamp 2027: AI & Machine Learning Track Registration';
+            } else {
+                subjectField.value = inquiryParam.replace(/_/g, ' ');
+            }
+        }
+    }
+
     // --- Header Scroll Effect ---
     const header = document.querySelector('header');
     const handleScroll = () => {

@@ -2756,3 +2756,36 @@ body.rtl .poster-preview-badge {
         font-size: 2.1rem;
     }
 }
+
+.btn-book-seat {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--gradient-primary);
+    color: #ffffff !important;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 14px 34px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.35);
+}
+.btn-book-seat:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.45);
+    color: #ffffff !important;
+}
+.btn-book-seat:active {
+    transform: translateY(0) scale(0.98);
+}
+.btn-book-seat svg {
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 640px) {
+    .btn-book-seat {
+        width: 100%;
+    }
+}
