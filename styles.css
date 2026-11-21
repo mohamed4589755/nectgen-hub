@@ -2756,8 +2756,3 @@ body.rtl .poster-preview-badge {
         font-size: 2.1rem;
     }
 }
-
-#bootCard1 .card-image-wrap img,
-#bootCard2 .card-image-wrap img {
-    object-position: top center;
-}
