@@ -1130,104 +1130,21 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langToggle = document.getElementById('langToggle');
-    let currentLang = localStorage.getItem('selectedLang') || 'en';
-    
-    // Create/Insert Language switch dropdown dynamically into navbar if not present
-    const insertLangButton = () => {
-        const navMenu = document.getElementById('navMenu');
-        if (navMenu && !document.getElementById('langDropdownContainer')) {
-            const li = document.createElement('li');
-            li.id = 'langDropdownContainer';
-            li.className = 'lang-dropdown-container';
-            
-            // Create main button
-            const btn = document.createElement('button');
-            btn.id = 'langToggleBtn';
-            btn.className = 'lang-dropdown-btn';
-            
-            // Globe icon SVG
-            const globeSvg = `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
-            
-            // Chevron down SVG
-            const chevronSvg = `<svg class="chevron-icon" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-left: 2px; transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>`;
-            
-            btn.innerHTML = `${globeSvg} <span class="active-lang-text">EN</span> ${chevronSvg}`;
-            
-            // Create dropdown menu
-            const menu = document.createElement('ul');
-            menu.id = 'langDropdownMenu';
-            menu.className = 'lang-dropdown-menu';
-            
-            // English option
-            const optEn = document.createElement('li');
-            optEn.className = 'lang-dropdown-item';
-            optEn.textContent = 'English';
-            optEn.setAttribute('data-lang', 'en');
-            
-            // Arabic option
-            const optAr = document.createElement('li');
-            optAr.className = 'lang-dropdown-item';
-            optAr.textContent = 'العربية';
-            optAr.setAttribute('data-lang', 'ar');
-            
-            menu.appendChild(optEn);
-            menu.appendChild(optAr);
-            
-            li.appendChild(btn);
-            li.appendChild(menu);
-            
-            // Append to navMenu
-            navMenu.appendChild(li);
-            
-            // Click listener for button (toggle menu)
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                menu.classList.toggle('show');
-                btn.classList.toggle('active');
-            });
-            
-            // Click listeners for options
-            optEn.addEventListener('click', () => {
-                if (currentLang !== 'en') {
-                    currentLang = 'en';
-                    localStorage.setItem('selectedLang', currentLang);
-                    applyLanguage(currentLang);
-                }
-                menu.classList.remove('show');
-                btn.classList.remove('active');
-            });
-            
-            optAr.addEventListener('click', () => {
-                if (currentLang !== 'ar') {
-                    currentLang = 'ar';
-                    localStorage.setItem('selectedLang', currentLang);
-                    applyLanguage(currentLang);
-                }
-                menu.classList.remove('show');
-                btn.classList.remove('active');
-            });
-            
-            // Close dropdown when clicking anywhere else
-            document.addEventListener('click', () => {
-                menu.classList.remove('show');
-                btn.classList.remove('active');
-            });
-        }
-    };
-    
+    const currentLang = 'en';
+    localStorage.setItem('selectedLang', currentLang);
+
+    // Remove language toggle dropdown if present
+    const existingLangDropdown = document.getElementById('langDropdownContainer');
+    if (existingLangDropdown) {
+        existingLangDropdown.remove();
+    }
+
     const applyLanguage = (lang) => {
-        const isRtl = lang === 'ar';
-        document.documentElement.dir = isRtl ? 'rtl' : 'ltr';
+        document.documentElement.dir = 'ltr';
         document.documentElement.lang = lang;
-        
-        if (isRtl) {
-            document.body.classList.add('rtl');
-        } else {
-            document.body.classList.remove('rtl');
-        }
-        
-        // Translate all data-i18n elements
+        document.body.classList.remove('rtl');
+
+        // Translate all data-i18n elements to canonical English
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
@@ -1235,34 +1152,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Translate placeholders
+        // Translate placeholders to canonical English
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const key = el.getAttribute('data-i18n-placeholder');
             if (translations[lang] && translations[lang][key]) {
                 el.setAttribute('placeholder', translations[lang][key]);
             }
         });
-        
-        // Update active language label in dropdown button
-        const activeLangText = document.querySelector('.active-lang-text');
-        if (activeLangText) {
-            activeLangText.textContent = lang === 'en' ? 'EN' : 'العربية';
-        }
-        
-        // Highlight active dropdown item
-        document.querySelectorAll('.lang-dropdown-item').forEach(item => {
-            const itemLang = item.getAttribute('data-lang');
-            if (itemLang === lang) {
-                item.classList.add('active');
-            } else {
-                item.classList.remove('active');
-            }
-        });
-        
-
     };
-    
-    // Init Lang
-    insertLangButton();
+
+    // Init English-only mode
     applyLanguage(currentLang);
 });

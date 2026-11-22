@@ -2,6 +2,11 @@
 localStorage.setItem('selectedTheme', 'light');
 document.documentElement.classList.remove('dark-theme');
 document.body.classList.remove('dark-theme');
+// Force English language and LTR direction
+localStorage.setItem('selectedLang', 'en');
+document.documentElement.dir = 'ltr';
+document.documentElement.lang = 'en';
+document.body.classList.remove('rtl');
 document.addEventListener('DOMContentLoaded', () => {
     // Pre-fill contact form from URL params
     const urlParams = new URLSearchParams(window.location.search);
@@ -61,17 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = document.getElementById('email') ? document.getElementById('email').value.trim() : '';
             const subject = document.getElementById('subject') ? document.getElementById('subject').value.trim() : '';
             const message = document.getElementById('message') ? document.getElementById('message').value.trim() : '';
-            const currentLang = localStorage.getItem('selectedLang') || 'en';
 
             if (!name || !email || !subject || !message) {
-                showToast(currentLang === 'ar' ? 'يرجى ملء جميع الحقول المطلوبة.' : 'Please fill out all fields before submitting.', 'error');
+                showToast('Please fill out all fields before submitting.', 'error');
                 return;
             }
 
             const origText = submitBtn ? submitBtn.innerText : '';
             if (submitBtn) {
                 submitBtn.disabled = true;
-                submitBtn.innerText = currentLang === 'ar' ? 'جاري الإرسال...' : 'Sending...';
+                submitBtn.innerText = 'Sending...';
             }
 
             fetch('https://formsubmit.co/ajax/nextgeninstitute.careers@gmail.com', {
@@ -97,20 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.innerText = origText;
                 }
                 if (data.success === "true" || data.success === true) {
-                    const successMsg = currentLang === 'ar' 
-                        ? `شكراً لك يا ${name}! تم إرسال رسالتك بنجاح وسنتواصل معك قريباً.`
-                        : `Thank you, ${name}! Your inquiry has been sent successfully.`;
+                    const successMsg = `Thank you, ${name}! Your inquiry has been sent successfully.`;
                     showToast(successMsg, 'success');
                     contactForm.reset();
                 } else if (data.message && data.message.includes('Activation')) {
-                    const warnMsg = currentLang === 'ar'
-                        ? 'تنبيه: يرجى فتح الإيميل nextgeninstitute.careers@gmail.com والضغط على رابط التفعيل (Activate Form) لمرة واحدة.'
-                        : 'Form needs activation! Please check nextgeninstitute.careers@gmail.com inbox to activate.';
+                    const warnMsg = 'Form needs activation! Please check nextgeninstitute.careers@gmail.com inbox to activate.';
                     showToast(warnMsg, 'error');
                 } else {
-                    const errorMsg = currentLang === 'ar'
-                        ? 'حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقاً.'
-                        : 'An error occurred while sending. Please try again.';
+                    const errorMsg = 'An error occurred while sending. Please try again.';
                     showToast(errorMsg, 'error');
                 }
             })
@@ -119,9 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.disabled = false;
                     submitBtn.innerText = origText;
                 }
-                const errorMsg = currentLang === 'ar' 
-                    ? 'حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقاً.'
-                    : 'An error occurred while sending. Please try again.';
+                const errorMsg = 'An error occurred while sending. Please try again.';
                 showToast(errorMsg, 'error');
             });
         });
