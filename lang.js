@@ -246,7 +246,7 @@ const translations = {
         intern_faq9_a: "Choose your preferred track and click \"Register Now\" to submit your application.",
         // Bootcamps Page (Winter 2027)
         winter_badge_text: "Winter Bootcamp 2027",
-        winter_for_uni_students: "University Students Only • خاص بطلاب الجامعات فقط",
+        winter_for_uni_students: "50% Discount For University Students",
         winter_stat1_text: "80 Hours Training",
         winter_stat2_text: "1.5 Months Duration",
         winter_stat3_text: "Certificate of Completion",
@@ -810,7 +810,7 @@ const translations = {
         intern_faq9_a: "اختر مسارك المفضل واضغط على \"قدم الآن\" لتقديم طلبك.",
         // Bootcamps Page (Winter 2027) - AR
         winter_badge_text: "معسكرات شتاء ٢٠٢٧",
-        winter_for_uni_students: "خاص بطلاب الجامعات فقط • خصم ٥٠٪",
+        winter_for_uni_students: "50% Discount For University Students",
         winter_stat1_text: "٨٠ ساعة تدريبية",
         winter_stat2_text: "شهر ونصف مدة التدريب",
         winter_stat3_text: "شهادة إتمام معتمدة",
