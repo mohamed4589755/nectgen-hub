@@ -221,7 +221,8 @@ header.scrolled {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 24px;
+    align-items: center;
 }
 
 .nav-link {
@@ -231,6 +232,7 @@ header.scrolled {
     color: #374151; /* High contrast gray */
     letter-spacing: -0.01em;
     padding: 6px 0;
+    white-space: nowrap;
     transition: color 0.3s ease;
 }
 
@@ -2788,4 +2790,8 @@ body.rtl .poster-preview-badge {
     .btn-book-seat {
         width: 100%;
     }
+}
+
+#success-stories {
+    scroll-margin-top: 84px;
 }

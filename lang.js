@@ -5,6 +5,7 @@ const translations = {
         nav_internships: "Internships",
         nav_bootcamps: "Bootcamps",
         nav_diplomas: "Diplomas",
+        nav_success_stories: "Success Stories",
         nav_about: "About Us",
         nav_contact: "Contact",
         
@@ -569,6 +570,7 @@ const translations = {
         nav_internships: "فرص التدريب",
         nav_bootcamps: "المعسكرات الصيفية",
         nav_diplomas: "الدبلومات المهنية",
+        nav_success_stories: "قصص النجاح",
         nav_about: "من نحن",
         nav_contact: "اتصل بنا",
         
