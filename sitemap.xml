@@ -49,6 +49,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://nextgenhub.dev/diploma-frontend.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://nextgenhub.dev/diploma-flutter.html</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
