@@ -1908,7 +1908,7 @@ body.rtl .form-group {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .hero-content-centered {
@@ -1927,22 +1927,11 @@ body.rtl .form-group {
 }
 
 .hero-content-centered .hero-subtitle {
-    font-size: 1.05rem;
-    line-height: 1.65;
+    font-size: 1.35rem;
+    line-height: 1.5;
     color: var(--text-muted);
-    margin-bottom: 24px;
-    max-width: 760px;
-}
-
-.hero-content-centered .hero-subtitle p {
-    max-width: 100%;
-    margin: 0 0 12px 0;
-}
-
-.hero-content-centered .hero-subtitle p:last-child {
-    margin-bottom: 0;
-    font-weight: 600;
-    color: var(--text-main);
+    margin-bottom: 36px;
+    max-width: 680px;
 }
 
 .hero-content-centered .hero-actions {
@@ -1958,9 +1947,9 @@ body.rtl .form-group {
         line-height: 1.15;
     }
     .hero-content-centered .hero-subtitle {
-        font-size: 0.98rem !important;
-        line-height: 1.6;
-        margin-bottom: 22px;
+        font-size: 1.1rem !important;
+        line-height: 1.4;
+        margin-bottom: 28px;
     }
 }
 

@@ -20,7 +20,7 @@ const translations = {
         // Index Page
         index_hero_tag: "Empower the Future",
         index_hero_title: "Empowering the Next Generation of <span class='gradient-text'>Tech Creators</span>",
-        index_hero_sub: "<p>NextGen Institute is an emerging leader in technology education and professional development across the MENA region.</p><p>We empower the next generation of talent through industry-oriented training programs, professional diplomas, and practical learning experiences in Data Analytics, Artificial Intelligence, Machine Learning, Flutter, and Web Development.</p><p>Through academic and industry collaborations, we bridge the gap between education and the job market, equipping individuals with the technical expertise and professional skills needed to thrive in a rapidly evolving digital world.</p><p>NextGen Institute — Building the technical skills of the next generation.</p>",
+        index_hero_sub: "At NextGen Institute, we bridge the gap between academic theory and practical innovation. Join our immersive programs in AI, Machine Learning, Data Analytics, Web Development, and Flutter to shape the future of technology.",
         index_hero_cta_primary: "Explore Programs",
         explore_modal_title: "Explore Our Programs",
         explore_modal_sub: "Choose the path that matches your learning style and career goals.",
